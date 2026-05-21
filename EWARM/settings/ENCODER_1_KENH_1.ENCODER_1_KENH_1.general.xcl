@@ -1,0 +1,15 @@
+C:\iar\ewarm-9.70.4\arm\bin\armproc.dll
+
+ C:\iar\ewarm-9.70.4\arm\bin\armstlink.dll
+
+ "C:\Users\taduc\Documents\STM32 IAR\ENCODER_1_KENH_1\EWARM\ENCODER_1_KENH_1\Exe\ENCODER_1_KENH_1.out"
+
+ --plugin=C:\iar\ewarm-9.70.4\arm\bin\armLibSupportUniversal.dll
+
+ --device_macro=C:\iar\ewarm-9.70.4\arm/config/debugger/ST/STM32F4xx.dmac
+
+ --flash_loader=C:\iar\ewarm-9.70.4\arm/config/flashloader/ST/FlashSTM32F411xE.board
+
+ 
+
+
