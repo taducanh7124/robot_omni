@@ -1,0 +1,36 @@
+{
+    "configurations": [
+        {
+            "name": "STM32F411",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/Core/Inc",
+                "${workspaceFolder}/Drivers/STM32F4xx_HAL_Driver/Inc",
+                "${workspaceFolder}/Drivers/CMSIS/Include",
+                "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32F4xx/Include",
+                // Duong dan toi cac thu muc nguoi dung tao
+                "${workspaceFolder}/Core/Cpp/MainCpp/Inc",
+                "${workspaceFolder}/Core/Cpp/LibraryCpp/Inc",
+                "${workspaceFolder}/Core/Cpp/FunctionCpp/Inc"                
+            ],
+            "defines": [
+                "USE_HAL_DRIVER",
+                "STM32F411xE"
+            ],
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "gcc-arm",
+
+                        "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+
+            "configurationProvider": "iarsystems.iar-build",
+            "compilerPath": "C:/Users/taduc/Downloads/arm-gnu-toolchain-15.2.rel1-mingw-w64-x86_64-arm-none-eabi/bin/arm-none-eabi-g++.exe"
+        }
+    ],
+    "version": 4
+}
