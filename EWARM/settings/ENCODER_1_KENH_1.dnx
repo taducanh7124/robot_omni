@@ -38,11 +38,11 @@
         <EnforceMemoryConfiguration>1</EnforceMemoryConfiguration>
     </ArmDriver>
     <DebugChecksum>
-        <Checksum>1796446767</Checksum>
+        <Checksum>4027744960</Checksum>
     </DebugChecksum>
     <Exceptions>
-        <StopOnThrow>_ 0</StopOnThrow>
         <StopOnUncaught>_ 0</StopOnUncaught>
+        <StopOnThrow>_ 0</StopOnThrow>
     </Exceptions>
     <Disassembly>
         <MixedMode>1</MixedMode>
@@ -118,13 +118,6 @@
         <ShowTimeSum>1</ShowTimeSum>
         <SumSortOrder>0</SumSortOrder>
     </EventLog>
-    <DriverProfiling>
-        <Enabled>0</Enabled>
-        <Mode>3</Mode>
-        <Graph>0</Graph>
-        <Symbiont>0</Symbiont>
-        <Exclusions />
-    </DriverProfiling>
     <TermIOLog>
         <LoggingEnabled>_ 0</LoggingEnabled>
         <LogFile>_ ""</LogFile>
@@ -135,6 +128,13 @@
     <Breakpoints2>
         <Count>0</Count>
     </Breakpoints2>
+    <DriverProfiling>
+        <Enabled>0</Enabled>
+        <Mode>3</Mode>
+        <Graph>0</Graph>
+        <Symbiont>0</Symbiont>
+        <Exclusions />
+    </DriverProfiling>
     <Aliases>
         <Count>0</Count>
         <SuppressDialog>0</SuppressDialog>
