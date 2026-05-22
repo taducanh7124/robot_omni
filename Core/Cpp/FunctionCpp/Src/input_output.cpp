@@ -125,7 +125,7 @@ bool Parse_Robot_Command_Float(const char *str)
         robot_vx = values[0];
         robot_vy = values[1];
         robot_theta = values[2];
-        
+
         v_robot = robot_vx;
         w_robot = robot_vy;
         theta_robot = robot_theta;
@@ -228,5 +228,8 @@ void debug_guiDuLieu()
 
         // Đẩy dữ liệu đi (DMA sẽ tự động phất cờ rảnh ở ngắt TxCpltCallback)
         HAL_UART_Transmit_DMA(&huart6, txBuffer, doDaiGoiTin);
+        // HAL_UART_Transmit(&huart6, txBuffer, doDaiGoiTin, HAL_MAX_DELAY);
+
+        // HAL_UART_Transmit_DMA(&huart6, "Hello Pi!\n", 11);
     }
 }

@@ -41,6 +41,13 @@ void khoiTaoSerial()
     RingBuffer_Init(&ros2_uart, &huart6, dma_rx_buffer, RX_BUF_SIZE);
 }
 
+uint32_t testTimer = 0;
+uint32_t timerCount = 0;
+
+uint32_t timeMain = 0;
+uint32_t testTimerMain = 0;
+uint32_t loopCount = 0;
+
 void main_cpp()
 {
     khoiTaoMPU();
@@ -51,8 +58,22 @@ void main_cpp()
     uint32_t tgNhayLedCu = 0;
     uint32_t tgDieuKhienMotorCu = 0;
 
+    // while (1)
+    // {
+    //     HAL_UART_Transmit_DMA(&huart6, (uint8_t *)"Robot Omni Started!\n", 21);
+    // }
+
     while (1)
     {
+        // số lần gọi while(1) trong 1s
+        loopCount++;
+        if (HAL_GetTick() - timeMain > 1000)
+        {
+            timeMain = HAL_GetTick();
+            testTimerMain = loopCount;
+            loopCount = 0;
+        }
+
         // Nháy LED báo trạng thái
         if (HAL_GetTick() - tgNhayLedCu >= 1000)
         {
@@ -65,6 +86,16 @@ void main_cpp()
         {
             isDMPNewData = false; // Xóa cờ ngắt
             tinhThongSoGoc();     // Cập nhật ngay lập tức góc Yaw và Vận tốc góc yaw
+
+            // số lần tính toán
+            timerCount++;
+            static uint32_t time = 0;
+            if (HAL_GetTick() - time > 1000)
+            {
+                time = HAL_GetTick();
+                testTimer = timerCount;
+                timerCount = 0;
+            }
         }
 
         // Nhan du lieu dieu khien dao vao
@@ -100,11 +131,31 @@ void main_cpp()
 
 extern "C"
 {
+    // uint32_t testTimer_mpu = 0;
+    // uint32_t timerCount_mpu = 0;
     void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     {
         if (GPIO_Pin == IMU_EXTI_Pin)
         {
             isDMPNewData = true;
+
+            // // số lần ngắt /1s
+            // timerCount_mpu++;
+            // static uint32_t time = 0;
+            // if (HAL_GetTick() - time > 1000)
+            // {
+            //     time = HAL_GetTick();
+            //     testTimer_mpu = timerCount_mpu;
+            //     timerCount_mpu = 0;
+            // }
+        }
+    }
+
+    void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+    {
+        if (htim->Instance == TIM10)
+        {
+            tinhTargetWheelSpeeds_c(); // Tính toán tốc độ bánh xe mục tiêu mỗi 10ms
         }
     }
 }

@@ -98,10 +98,10 @@ RobotDrive_t robot = {
 // Ham dieu khien dong co tuc thi
 void dieuKhienMotor()
 {
-    // MotorCtr_FL.control((uint16_t)fabsf(robot.motor_front_left.ccrTL), static_cast<MotorDir>(robot.motor_front_left.dir));
-    // MotorCtr_FR.control((uint16_t)fabsf(robot.motor_front_right.ccrTL), static_cast<MotorDir>(robot.motor_front_right.dir));
-    // MotorCtr_RL.control((uint16_t)fabsf(robot.motor_rear_left.ccrTL), static_cast<MotorDir>(robot.motor_rear_left.dir));
-    // MotorCtr_RR.control((uint16_t)fabsf(robot.motor_rear_right.ccrTL), static_cast<MotorDir>(robot.motor_rear_right.dir));
+    MotorCtr_FL.control((uint16_t)fabsf(robot.motor_front_left.ccrTL), static_cast<MotorDir>(robot.motor_front_left.dir));
+    MotorCtr_FR.control((uint16_t)fabsf(robot.motor_front_right.ccrTL), static_cast<MotorDir>(robot.motor_front_right.dir));
+    MotorCtr_RL.control((uint16_t)fabsf(robot.motor_rear_left.ccrTL), static_cast<MotorDir>(robot.motor_rear_left.dir));
+    MotorCtr_RR.control((uint16_t)fabsf(robot.motor_rear_right.ccrTL), static_cast<MotorDir>(robot.motor_rear_right.dir));
 }
 
 // Ham dung dong co tu tu

@@ -22,7 +22,7 @@
 
 #define PI 3.1416f
 #define millis() HAL_GetTick()
-#define I2CDEV_DEFAULT_WRITE_TIMEOUT     100
+#define I2CDEV_DEFAULT_WRITE_TIMEOUT     5
 #define delay(x) HAL_Delay(x)
 
 
