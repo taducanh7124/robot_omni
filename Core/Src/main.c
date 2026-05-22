@@ -27,6 +27,7 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "main_cpp.hpp"
+#include "pid_controller.hpp"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -48,6 +49,26 @@
 
 /* USER CODE BEGIN PV */
 
+//uint32_t testTimer = 0;
+//uint32_t timerCount = 0;
+
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+    if (htim->Instance == TIM10)
+    {
+
+        tinhTargetWheelSpeeds_c(); // Tính toán tốc độ bánh xe mục tiêu mỗi 10ms
+        
+//                timerCount++;
+//        static uint32_t time = 0;
+//        if(HAL_GetTick() - time > 1000 ){
+//          time = HAL_GetTick();
+//          testTimer = timerCount;
+//          timerCount = 0;
+        // }
+    }
+}
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -98,6 +119,7 @@ int main(void)
   MX_TIM5_Init();
   MX_USART6_UART_Init();
   MX_I2C1_Init();
+  MX_TIM10_Init();
   /* USER CODE BEGIN 2 */
   main_cpp();
   /* USER CODE END 2 */

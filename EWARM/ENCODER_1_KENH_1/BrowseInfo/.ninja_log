@@ -129,3 +129,7 @@
 4056	4165	8010362899754957	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/BrowseInfo/Src_15860686561163946261.dir/stm32f4xx_hal_tim_ex.c.json	2bae57d2f88c5c6d
 4167	4274	8010362900891605	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/BrowseInfo/Src_17366709354581954614.dir/stm32f4xx_hal_uart.c.json	638fd4372b9a1051
 4276	4385	8010362901982484	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/BrowseInfo/compile_commands.json	de935306e936b8c
+4	112	8010725855508398	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/BrowseInfo/Src_14546897844700092084.dir/uart_ring_buffer.c.json	eca2980fb0806b8
+114	193	8010725856605652	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/BrowseInfo/compile_commands.json	2293f0dcae586b84
+3	95	8010761874789304	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/BrowseInfo/Src_10121488913876756349.dir/pid_controller.cpp.json	855fdd0423440f78
+97	166	8010761875726135	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/BrowseInfo/compile_commands.json	f57f74aeba42218f

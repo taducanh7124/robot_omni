@@ -1,180 +1,127 @@
 # ninja log v6
-3415	7107	8010431643382893	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/MotorControl.o	ca65e1f8095484e5
-9332	10525	8009958163507182	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/gpio.o	64aa81ad32455881
-10882	11927	8009958179007218	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/stm32f4xx_hal_msp.o	71784c35cf11230e
-11757	12696	8009958187757190	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/stm32f4xx_it.o	5b605af4a3ef10d0
-9698	10646	8010399645407497	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/tim.o	a306805fc7609491
-13363	14625	8009958203817179	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/CMSIS_6603591812247902717.dir/system_stm32f4xx.o	1f680dcf20dbd51f
-14001	15234	8009958210197186	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal.o	d77392fe566624ee
-15237	17191	8009958222557166	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_dma.o	43255af314c52055
-14628	15910	8009958216467168	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_cortex.o	6d632db209fc5c58
-15913	17995	8009958229317151	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_dma_ex.o	4eae799b7b06574c
-17193	18385	8009958242117200	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_exti.o	dc78cdfb7a0cdd58
-17998	19133	8009958250167177	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_flash.o	25de27b300f5edf9
-2836	3105	8010475250940751	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	b6062476ae2a3a4
-19964	24086	8009958269827206	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_i2c.o	14d45c7d1fd272fe
-18389	19535	8009958254077194	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_flash_ex.o	e533da57c20f5480
-19136	19961	8009958261547203	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_flash_ramfunc.o	aa0e7b781532250
-1805	4046	8010425075441009	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/data.o	2f8f29e42a2104b8
-19538	20527	8009958265567186	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_gpio.o	5670fba823f7522d
-21282	22302	8009958283007191	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_pwr.o	7d52da0de1cc01d0
-22306	23085	8009958293237165	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_pwr_ex.o	714004c128346e1d
-24089	25106	8009958311077171	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_rcc_ex.o	c68e37688a48c340
-24237	27046	8009958312557197	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_tim.o	5e11502f4c13a260
-23087	24234	8009958301057184	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_rcc.o	743e220142419faa
-25109	26405	8009958321277214	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_tim_ex.o	13bd91fb97f1d6a6
-21643	87237	8005919371183722	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/EWARM_18443280873093131863.dir/startup_stm32f411xe.o	e5afc08f6d320e89
-3504	4288	8010425092431731	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	1169f711955e2b5
-8123	9738	8009958151417234	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/dma.o	97b655223f71ae76
-1645	2271	8010475239038969	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/main.o	57fce839a53ed04a
-2277	2833	8010475245358930	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1ee2feff7704be9b
-168	6210	8010399550111156	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_10572706617924158656.dir/ArduinoWrapper.o	fe86733565abecae
-6439	7244	8010399612823246	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/led_main.o	9bcd66410e0b0bc7
-26408	27685	8009958334267186	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_uart.o	c906475577512d29
-2216	6383	8010399570589917	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_10572706617924158656.dir/I2Cdev.o	c5510bee194a0980
-6213	10733	8010399610553900	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_10572706617924158656.dir/MPU6050.o	57a7975be28f55e0
-8088	8820	8010399629317489	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/i2c.o	e9814cbf3cde9a63
-12699	13998	8009958197177181	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/usart.o	f8defdcf7ae09cff
-123	1643	8010475223818916	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/UART_DMA.o	b07ce0467a171dc6
-20530	21280	8009958275487187	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_i2c_ex.o	aff9458b52e26baf
-2277	2833	8010475245358930	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1ee2feff7704be9b
-124	1861	8010414500421304	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/const.o	bbad71ce2aa46a7a
-30	1728	8010475222888914	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/input_output.o	d42c5d00e9273bdb
-1969	3507	8010544742224791	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/input_output.o	d42c5d00e9273bdb
-1969	3507	8010544742224791	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/input_output.o	d42c5d00e9273bdb
-2074	3816	8010544743281181	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/MotorControl.o	ca65e1f8095484e5
-2074	3816	8010544743281181	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/MotorControl.o	ca65e1f8095484e5
-3826	4474	8010544760792789	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	1169f711955e2b5
-3826	4474	8010544760792789	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	1169f711955e2b5
-3509	4772	8010544757632780	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/UART_DMA.o	b07ce0467a171dc6
-3509	4772	8010544757632780	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/UART_DMA.o	b07ce0467a171dc6
-4498	5882	8010544767512753	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_uart.o	c906475577512d29
-4498	5882	8010544767512753	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_uart.o	c906475577512d29
-5885	8681	8010544781387801	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1ee2feff7704be9b
-5885	8681	8010544781387801	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1ee2feff7704be9b
-5885	8681	8010544781387801	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1ee2feff7704be9b
-5885	8681	8010544781387801	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1ee2feff7704be9b
-8683	9217	8010544809366044	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	b6062476ae2a3a4
-1783	3270	8010562212060767	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/UART_DMA.o	b07ce0467a171dc6
-1783	3270	8010562212060767	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/UART_DMA.o	b07ce0467a171dc6
-1645	3544	8010562210675563	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/input_output.o	d42c5d00e9273bdb
-1645	3544	8010562210675563	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/input_output.o	d42c5d00e9273bdb
-3272	4412	8010562226943863	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/main.o	57fce839a53ed04a
-3272	4412	8010562226943863	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/main.o	57fce839a53ed04a
-4418	5427	8010562238400579	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1ee2feff7704be9b
-4418	5427	8010562238400579	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1ee2feff7704be9b
-4418	5427	8010562238400579	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1ee2feff7704be9b
-4418	5427	8010562238400579	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1ee2feff7704be9b
-5430	5846	8010562248526284	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	b6062476ae2a3a4
-1998	3102	8010564902893496	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/input_output.o	d42c5d00e9273bdb
-1998	3102	8010564902893496	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/input_output.o	d42c5d00e9273bdb
-3103	3626	8010564913940005	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1ee2feff7704be9b
-3103	3626	8010564913940005	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1ee2feff7704be9b
-3103	3626	8010564913940005	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1ee2feff7704be9b
-3103	3626	8010564913940005	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1ee2feff7704be9b
-3631	3770	8010564919209200	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	b6062476ae2a3a4
-21	1287	8010566257139007	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/input_output.o	d42c5d00e9273bdb
-21	1287	8010566257139007	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/input_output.o	d42c5d00e9273bdb
-1289	1737	8010566269819062	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1ee2feff7704be9b
-1289	1737	8010566269819062	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1ee2feff7704be9b
-1289	1737	8010566269819062	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1ee2feff7704be9b
-1289	1737	8010566269819062	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1ee2feff7704be9b
-1741	1883	8010566274339048	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	b6062476ae2a3a4
-633	2450	8010592341901887	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/MotorControl.o	ca65e1f8095484e5
-633	2450	8010592341901887	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/MotorControl.o	ca65e1f8095484e5
-597	2496	8010592341479899	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/input_output.o	d42c5d00e9273bdb
-597	2496	8010592341479899	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/input_output.o	d42c5d00e9273bdb
-2452	3099	8010592360030748	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/UART_DMA.o	b07ce0467a171dc6
-2452	3099	8010592360030748	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/UART_DMA.o	b07ce0467a171dc6
-3103	3720	8010592366540770	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1ee2feff7704be9b
-3103	3720	8010592366540770	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1ee2feff7704be9b
-3103	3720	8010592366540770	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1ee2feff7704be9b
-3103	3720	8010592366540770	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1ee2feff7704be9b
-3723	4022	8010592372736702	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	b6062476ae2a3a4
-575	1769	8010601038572827	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/UART_DMA.o	b07ce0467a171dc6
-575	1769	8010601038572827	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/UART_DMA.o	b07ce0467a171dc6
-1770	2563	8010601050516325	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1ee2feff7704be9b
-1770	2563	8010601050516325	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1ee2feff7704be9b
-1770	2563	8010601050516325	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1ee2feff7704be9b
-1770	2563	8010601050516325	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1ee2feff7704be9b
-2567	2949	8010601058481601	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	b6062476ae2a3a4
-3	642	8010365016063281	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/const.o	ddb459fc81949c11
-3	642	8010365016063281	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/const.o	ddb459fc81949c11
-34	660	8010365016377905	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_10572706617924158656.dir/ArduinoWrapper.o	43641035e1a8e46
-34	660	8010365016377905	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_10572706617924158656.dir/ArduinoWrapper.o	43641035e1a8e46
-15	703	8010365016186225	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/input_output.o	b67169279c41db34
-15	703	8010365016186225	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/input_output.o	b67169279c41db34
-21	722	8010365016221083	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/MotorControl.o	5bdc37c3070ca092
-21	722	8010365016221083	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/MotorControl.o	5bdc37c3070ca092
-28	760	8010365016298561	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/UART_DMA.o	6b3d4845b38a224a
-28	760	8010365016298561	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/UART_DMA.o	6b3d4845b38a224a
-9	935	8010365016063281	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/data.o	f1777983776a00b0
-9	935	8010365016063281	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/data.o	f1777983776a00b0
-708	1030	8010365023083116	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/led_main.o	c24195526f1e4944
-708	1030	8010365023083116	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/led_main.o	c24195526f1e4944
-765	1069	8010365023648017	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/dma.o	24af757e7cef5981
-765	1069	8010365023648017	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/dma.o	24af757e7cef5981
-726	1099	8010365023286189	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	ffe42c593d45997
-726	1099	8010365023286189	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	ffe42c593d45997
-646	1168	8010365022483645	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_10572706617924158656.dir/I2Cdev.o	e446f32271910d3a
-646	1168	8010365022483645	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_10572706617924158656.dir/I2Cdev.o	e446f32271910d3a
-938	1258	8010365025407191	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/gpio.o	493517d9316a92a5
-938	1258	8010365025407191	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/gpio.o	493517d9316a92a5
-1036	1365	8010365026396898	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/i2c.o	82a81ecc87b7d176
-1036	1365	8010365026396898	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/i2c.o	82a81ecc87b7d176
-1074	1394	8010365026782581	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/main.o	6a2fe7976afafdaa
-1074	1394	8010365026782581	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/main.o	6a2fe7976afafdaa
-1104	1421	8010365027072397	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/stm32f4xx_hal_msp.o	f69e1890edf9e393
-1104	1421	8010365027072397	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/stm32f4xx_hal_msp.o	f69e1890edf9e393
-1171	1462	8010365027740543	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/stm32f4xx_it.o	a0358bb1499798a1
-1171	1462	8010365027740543	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/stm32f4xx_it.o	a0358bb1499798a1
-1263	1640	8010365028648827	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/tim.o	1fcb3f073337d0d5
-1263	1640	8010365028648827	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/tim.o	1fcb3f073337d0d5
-1368	1680	8010365029707536	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/usart.o	682d2b5e778ab825
-1368	1680	8010365029707536	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/usart.o	682d2b5e778ab825
-1398	1707	8010365030002318	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/CMSIS_6603591812247902717.dir/system_stm32f4xx.o	c43ed6f114986709
-1398	1707	8010365030002318	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/CMSIS_6603591812247902717.dir/system_stm32f4xx.o	c43ed6f114986709
-1425	1746	8010365030279197	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal.o	2e5ce0b34c65c441
-1425	1746	8010365030279197	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal.o	2e5ce0b34c65c441
-1465	1803	8010365030675824	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_cortex.o	242334ccd2fd27cf
-1465	1803	8010365030675824	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_cortex.o	242334ccd2fd27cf
-665	1842	8010365022678536	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_10572706617924158656.dir/MPU6050.o	118e93952046598c
-665	1842	8010365022678536	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_10572706617924158656.dir/MPU6050.o	118e93952046598c
-1712	2051	8010365033163336	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_exti.o	25d49e2162626cf8
-1712	2051	8010365033163336	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_exti.o	25d49e2162626cf8
-1643	2066	8010365032444467	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_dma.o	a0061cfae66c0003
-1643	2066	8010365032444467	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_dma.o	a0061cfae66c0003
-1750	2111	8010365033526172	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_flash.o	d4bea3e534b0b3d0
-1750	2111	8010365033526172	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_flash.o	d4bea3e534b0b3d0
-1845	2136	8010365034443176	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_flash_ramfunc.o	9d6b66d32e65ff4
-1845	2136	8010365034443176	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_flash_ramfunc.o	9d6b66d32e65ff4
-1806	2164	8010365034065712	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_flash_ex.o	6002119266bad6ae
-1806	2164	8010365034065712	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_flash_ex.o	6002119266bad6ae
-1684	2190	8010365032877514	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_dma_ex.o	13880b4d9c6b31a
-1684	2190	8010365032877514	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_dma_ex.o	13880b4d9c6b31a
-2114	2411	8010365037171408	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_i2c_ex.o	b8098ed4dfa76f81
-2114	2411	8010365037171408	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_i2c_ex.o	b8098ed4dfa76f81
-2055	2446	8010365036581712	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_gpio.o	24ca3247b9a30fc9
-2055	2446	8010365036581712	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_gpio.o	24ca3247b9a30fc9
-2139	2466	8010365037427900	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_pwr.o	d611d19d44a69017
-2139	2466	8010365037427900	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_pwr.o	d611d19d44a69017
-2167	2512	8010365037696462	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_pwr_ex.o	d69e7c3ce243363a
-2167	2512	8010365037696462	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_pwr_ex.o	d69e7c3ce243363a
-2193	2603	8010365037940002	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_rcc.o	5d1b54d0bb751166
-2193	2603	8010365037940002	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_rcc.o	5d1b54d0bb751166
-2418	2762	8010365040213335	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_rcc_ex.o	9da2c7773f8551f8
-2418	2762	8010365040213335	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_rcc_ex.o	9da2c7773f8551f8
-2606	2818	8010365042101979	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/EWARM_18443280873093131863.dir/startup_stm32f411xe.o	904e2434194ff59c
-2606	2818	8010365042101979	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/EWARM_18443280873093131863.dir/startup_stm32f411xe.o	904e2434194ff59c
-2489	3038	8010365040919937	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_tim_ex.o	44b450ae01504559
-2489	3038	8010365040919937	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_tim_ex.o	44b450ae01504559
-2517	3114	8010365041161965	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_uart.o	3b28810c2971aed8
-2517	3114	8010365041161965	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_uart.o	3b28810c2971aed8
-2070	3200	8010365036727186	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_i2c.o	20004fa4b962a495
-2070	3200	8010365036727186	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_i2c.o	20004fa4b962a495
-2452	3398	8010365040561767	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_tim.o	9eb239e8050de21
-2452	3398	8010365040561767	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_tim.o	9eb239e8050de21
-3401	3809	8010365050041596	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	c3ead3495c620d3f
-3401	3809	8010365050041596	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	c3ead3495c620d3f
-3401	3809	8010365050041596	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	c3ead3495c620d3f
-3812	3897	8010365054130613	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	58333afd0d382fa4
+1409	1688	8010697569160708	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_gpio.o	24ca3247b9a30fc9
+1096	1489	8010697566031067	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_dma_ex.o	13880b4d9c6b31a
+833	1080	8010697563406985	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/usart.o	682d2b5e778ab825
+552	798	8010697560594967	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/gpio.o	493517d9316a92a5
+288	1230	8010697557959562	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_10572706617924158656.dir/MPU6050.o	118e93952046598c
+6	295	8010779446357060	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/pid_controller.o	4df0c3049fc8e75a
+1880	1905	8010697573878795	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/EWARM_18443280873093131863.dir/startup_stm32f411xe.o	904e2434194ff59c
+5	228	8010697555121538	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/const.o	ddb459fc81949c11
+5	595	8010799602982697	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	ffe42c593d45997
+1714	2569	8010697572220836	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_tim.o	9eb239e8050de21
+526	754	8010697560335459	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/dma.o	24af757e7cef5981
+422	583	8010802255550343	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+231	549	8010697557387952	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_10572706617924158656.dir/ArduinoWrapper.o	43641035e1a8e46
+1691	1981	8010697571987989	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_rcc_ex.o	9da2c7773f8551f8
+1492	1737	8010697569996648	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_pwr.o	d611d19d44a69017
+10	320	8010802251428514	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/input_output.o	b67169279c41db34
+5	337	8010788537692907	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/MotorControl.o	5bdc37c3070ca092
+1739	2192	8010697572467430	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_tim_ex.o	44b450ae01504559
+893	1149	8010697564003636	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal.o	2e5ce0b34c65c441
+998	1292	8010697565061980	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_cortex.o	242334ccd2fd27cf
+5	420	8010802251378526	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/data.o	f1777983776a00b0
+346	577	8010697558540687	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/led_main.o	c24195526f1e4944
+1786	2307	8010697572929874	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_uart.o	3b28810c2971aed8
+265	627	8010697557728502	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_10572706617924158656.dir/I2Cdev.o	e446f32271910d3a
+580	830	8010697560879055	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/i2c.o	82a81ecc87b7d176
+51	498	8010761900218610	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/stm32f4xx_it.o	a0358bb1499798a1
+15	235	8010802251479031	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/main.o	6a2fe7976afafdaa
+1083	1465	8010697565909820	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_dma.o	a0061cfae66c0003
+662	890	8010697561699695	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/stm32f4xx_hal_msp.o	f69e1890edf9e393
+1456	2423	8010697569638566	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_i2c.o	20004fa4b962a495
+10	329	8010769081852501	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/tim.o	1fcb3f073337d0d5
+1151	1453	8010697566588325	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_flash.o	d4bea3e534b0b3d0
+870	1093	8010697563779433	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/CMSIS_6603591812247902717.dir/system_stm32f4xx.o	c43ed6f114986709
+1573	1877	8010697570801158	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_rcc.o	5d1b54d0bb751166
+1119	1405	8010697566262115	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_exti.o	25d49e2162626cf8
+1296	1570	8010697568029143	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_flash_ramfunc.o	9d6b66d32e65ff4
+1232	1550	8010697567400531	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_flash_ex.o	6002119266bad6ae
+1468	1711	8010697569759124	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_i2c_ex.o	b8098ed4dfa76f81
+1552	1783	8010697570597125	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/STM32F4xx_HAL_Driver_1244631019742807970.dir/stm32f4xx_hal_pwr_ex.o	d69e7c3ce243363a
+422	583	8010802255550343	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+586	607	8010802257176281	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	58333afd0d382fa4
+9	211	8010719137030749	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/uart_ring_buffer.o	ccbd861e11741e05
+15	326	8010812069925988	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/gpio.o	493517d9316a92a5
+15	326	8010812069925988	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/gpio.o	493517d9316a92a5
+8	399	8010812069855397	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/pid_controller.o	4df0c3049fc8e75a
+8	399	8010812069855397	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/pid_controller.o	4df0c3049fc8e75a
+401	568	8010812073800697	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+401	568	8010812073800697	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+401	568	8010812073800697	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+401	568	8010812073800697	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+571	593	8010812075496199	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	58333afd0d382fa4
+9	189	8010812925841427	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/main.o	6a2fe7976afafdaa
+9	189	8010812925841427	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/main.o	6a2fe7976afafdaa
+5	208	8010812925683753	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	ffe42c593d45997
+5	208	8010812925683753	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	ffe42c593d45997
+211	372	8010812927861144	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+211	372	8010812927861144	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+211	372	8010812927861144	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+211	372	8010812927861144	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+375	395	8010812929499245	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	58333afd0d382fa4
+96	862	8010827512532561	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/main.o	6a2fe7976afafdaa
+96	862	8010827512532561	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/main.o	6a2fe7976afafdaa
+21	878	8010827511786292	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	ffe42c593d45997
+21	878	8010827511786292	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	ffe42c593d45997
+880	1339	8010827520379108	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+880	1339	8010827520379108	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+880	1339	8010827520379108	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+880	1339	8010827520379108	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+1342	1405	8010827524996285	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	58333afd0d382fa4
+10	183	8010828633506498	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/gpio.o	493517d9316a92a5
+10	183	8010828633506498	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/gpio.o	493517d9316a92a5
+5	200	8010828633446208	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	ffe42c593d45997
+5	200	8010828633446208	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	ffe42c593d45997
+203	361	8010828635438626	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+203	361	8010828635438626	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+203	361	8010828635438626	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+203	361	8010828635438626	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+364	384	8010828637051144	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	58333afd0d382fa4
+9	484	8010840585863542	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/input_output.o	b67169279c41db34
+9	484	8010840585863542	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/input_output.o	b67169279c41db34
+19	510	8010840585953800	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/pid_controller.o	4df0c3049fc8e75a
+19	510	8010840585953800	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/pid_controller.o	4df0c3049fc8e75a
+29	534	8010840586050140	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	ffe42c593d45997
+29	534	8010840586050140	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	ffe42c593d45997
+23	556	8010840585999101	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/uart_ring_buffer.o	ccbd861e11741e05
+23	556	8010840585999101	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/uart_ring_buffer.o	ccbd861e11741e05
+14	592	8010840585908729	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/MotorControl.o	5bdc37c3070ca092
+14	592	8010840585908729	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/MotorControl.o	5bdc37c3070ca092
+5	629	8010840585813537	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/data.o	f1777983776a00b0
+5	629	8010840585813537	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/data.o	f1777983776a00b0
+486	699	8010840590633911	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/main.o	6a2fe7976afafdaa
+486	699	8010840590633911	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/main.o	6a2fe7976afafdaa
+702	866	8010840592795427	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+702	866	8010840592795427	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+702	866	8010840592795427	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+702	866	8010840592795427	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+868	890	8010840594451302	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	58333afd0d382fa4
+5	269	8011086265684689	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	ffe42c593d45997
+5	269	8011086265684689	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	ffe42c593d45997
+271	428	8011086268416914	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+271	428	8011086268416914	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+271	428	8011086268416914	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+271	428	8011086268416914	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+430	452	8011086270019086	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	58333afd0d382fa4
+69	661	8011108425961059	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	ffe42c593d45997
+69	661	8011108425961059	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_4229662168563015991.dir/main_cpp.o	ffe42c593d45997
+61	678	8011108425890566	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/uart_ring_buffer.o	ccbd861e11741e05
+61	678	8011108425890566	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/uart_ring_buffer.o	ccbd861e11741e05
+75	708	8011108426021182	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/main.o	6a2fe7976afafdaa
+75	708	8011108426021182	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/main.o	6a2fe7976afafdaa
+46	715	8011108425739990	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/pid_controller.o	4df0c3049fc8e75a
+46	715	8011108425739990	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/pid_controller.o	4df0c3049fc8e75a
+29	807	8011108425569038	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/MotorControl.o	5bdc37c3070ca092
+29	807	8011108425569038	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Src_8308038492197328671.dir/MotorControl.o	5bdc37c3070ca092
+810	979	8011108433375730	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+810	979	8011108433375730	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+810	979	8011108433375730	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+810	979	8011108433375730	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+982	1004	8011108435091933	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	58333afd0d382fa4
+5	191	8011109008002817	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/main.o	6a2fe7976afafdaa
+5	191	8011109008002817	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Obj/Core_13247989168731456611.dir/main.o	6a2fe7976afafdaa
+193	349	8011109009882422	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+193	349	8011109009882422	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+193	349	8011109009882422	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.out	1fa54914de09ea94
+193	349	8011109009882422	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/List/ENCODER_1_KENH_1.map	1fa54914de09ea94
+351	371	8011109011470782	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/Exe/ENCODER_1_KENH_1.hex	58333afd0d382fa4

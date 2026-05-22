@@ -3,10 +3,21 @@
 #include "tim.h"
 #include "usart.h"
 #include "led_main.hpp"
-#include "UART_DMA.hpp"
 #include "input_output.hpp"
 #include "MotorControl.hpp"
 #include "data.hpp"
+#include "uart_ring_buffer.h"
+#include "pid_controller.hpp"
+
+// Khai báo mảng vật lý và Object Ring Buffer
+#define RX_BUF_SIZE 256
+uint8_t dma_rx_buffer[RX_BUF_SIZE];
+RingBuffer_t ros2_uart;
+// Mảng tạm chứa chuỗi hoàn chỉnh
+char line[64];
+
+// Hàm Parse Float (đã viết ở câu trước)
+extern bool Parse_Robot_Command_Float(const char *str);
 
 void khoiTaoEncoder()
 {
@@ -21,10 +32,13 @@ void khoiTaoMotor()
     MotorCtr_FR.init(&htim5, TIM_CHANNEL_2, DIR2_GPIO_Port, DIR2_Pin);
     MotorCtr_RR.init(&htim5, TIM_CHANNEL_3, DIR3_GPIO_Port, DIR3_Pin);
     MotorCtr_RL.init(&htim5, TIM_CHANNEL_4, DIR4_GPIO_Port, DIR4_Pin);
+
+    // timer cho PID
+    HAL_TIM_Base_Start_IT(&htim10);
 }
 void khoiTaoSerial()
 {
-    UART_DMA_6.init(&huart6, rxBuffer, sizeof(rxBuffer));
+    RingBuffer_Init(&ros2_uart, &huart6, dma_rx_buffer, RX_BUF_SIZE);
 }
 
 void main_cpp()
@@ -54,7 +68,20 @@ void main_cpp()
         }
 
         // Nhan du lieu dieu khien dao vao
-        debug_nhanDuLieu();
+        // debug_nhanDuLieu();
+
+        // 3. Liên tục gọi hàm ReadUntil.
+        // Hàm này tự động chờ cho đến khi nhận đủ 1 chuỗi kết thúc bằng '\n'
+        if (RingBuffer_ReadUntil(&ros2_uart, line, sizeof(line), '\n') > 0)
+        {
+
+            // Xử lý chuỗi ngay lập tức
+            if (Parse_Robot_Command_Float(line))
+            {
+                // Đã cập nhật thành công robot_vx, robot_vy, robot_theta
+                // Chạy hàm điều khiển động cơ tại đây...
+            }
+        }
 
         // Dieu khien dong co du tren du lieu dau vao
         if (HAL_GetTick() - tgDieuKhienMotorCu >= 10)
