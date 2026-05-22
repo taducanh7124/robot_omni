@@ -10,7 +10,7 @@
 #include "pid_controller.hpp"
 
 // Khai báo mảng vật lý và Object Ring Buffer
-#define RX_BUF_SIZE 256
+#define RX_BUF_SIZE 1024
 uint8_t dma_rx_buffer[RX_BUF_SIZE];
 RingBuffer_t ros2_uart;
 // Mảng tạm chứa chuỗi hoàn chỉnh
