@@ -27,14 +27,13 @@ public:
 
 typedef struct
 {
-    uint8_t rxData[200];
-    bool isReadData;
-} HandleRXData;
-
-extern HandleRXData hrxdata;
+    uint8_t rxData[200]; // Mang chua du lieu nhan duoc de xu li, sao chep tu rxBuffer sang
+    bool isReadData;     // Co du lieu da duoc doc/xu li chua, 0 = du lieu moi, de nguyen, 1 = du lieu cu, ghi de
+} RXData_HandleTypeDef;  // Kieu du lieu cho du lieu nhan tu rx
 
 // khai bao UART DMA
 extern UART_DMA UART_DMA_6;
+extern RXData_HandleTypeDef hrxdata;
 extern uint8_t rxBuffer[200];
 extern uint8_t txBuffer[200];
 #endif

@@ -3,10 +3,9 @@
 #include "MotorControl.hpp"
 
 UART_DMA UART_DMA_6;
+RXData_HandleTypeDef hrxdata;
 uint8_t rxBuffer[200];
 uint8_t txBuffer[200];
-
-HandleRXData hrxdata;
 
 void UART_DMA::init(UART_HandleTypeDef *huart, uint8_t *rxBuffer, uint16_t size)
 {
@@ -47,13 +46,13 @@ extern "C"
 
                 hrxdata.isReadData = false;   // Tắt cờ, báo là có dữ liệu mới chưa đọc
                 robot.state.isDataNew = true; // Phất cờ báo cho hàm xử lý
-                // Ép dừng trạng thái Rx cũ trước khi gọi lại để tránh kẹt HAL_BUSY
-                HAL_UART_AbortReceive(huart);
-
-                // Tái kích hoạt DMA cho lần nhận tiếp theo
-                HAL_UARTEx_ReceiveToIdle_DMA(huart, rxBuffer, sizeof(rxBuffer));
-                __HAL_DMA_DISABLE_IT(huart->hdmarx, DMA_IT_HT);
             }
+            // // Ép dừng trạng thái Rx cũ trước khi gọi lại để tránh kẹt HAL_BUSY
+            // HAL_UART_AbortReceive(huart); // tat di?
+
+            // Tái kích hoạt DMA cho lần nhận tiếp theo
+            HAL_UARTEx_ReceiveToIdle_DMA(huart, rxBuffer, sizeof(rxBuffer));
+            __HAL_DMA_DISABLE_IT(huart->hdmarx, DMA_IT_HT);
         }
     }
 

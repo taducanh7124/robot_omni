@@ -2785,13 +2785,13 @@ int8_t MPU6050::GetCurrentFIFOPacket(uint8_t *data, uint8_t length)
         }
         if (!fifoC)
         {
-            printf("fifo no data!\n");
+            // tda tat in ra serial printf("fifo no data!\n");
             return 0; // Called too early no data or we timed out after FIFO Reset
         }
         // We have 1 packet
         if ((millis() - BreakTimer) > (11))
         {
-            printf("fifo wait too long!\n");
+            // tda tat in ra serial printf("fifo wait too long!\n");
             return 0;
         }
     }
@@ -3332,7 +3332,7 @@ void MPU6050::PID(uint8_t ReadAddress, float kP,float kI, uint8_t Loops){
             ITerm[i] = Reading * 4;
         }
     }
-    printf("\nbegin!\n");
+    // tda tat in ra serial printf("\nbegin!\n");
     for (int L = 0; L < Loops; L++)
     {
         eSample = 0;
@@ -3393,13 +3393,13 @@ void MPU6050::PID(uint8_t ReadAddress, float kP,float kI, uint8_t Loops){
     resetDMP();
 }
 
-#define printfloatx(Name,Variable,Spaces,Precision,EndTxt) { Serial.print(F(Name)); {char S[(Spaces + Precision + 3)];Serial.print(F(" ")); Serial.print(dtostrf((float)Variable,Spaces,Precision ,S));}Serial.print(F(EndTxt)); }//Name,Variable,Spaces,Precision,EndTxt
+// tda #define printfloatx(Name,Variable,Spaces,Precision,EndTxt) { Serial.print(F(Name)); {char S[(Spaces + Precision + 3)];Serial.print(F(" ")); Serial.print(dtostrf((float)Variable,Spaces,Precision ,S));}Serial.print(F(EndTxt)); }//Name,Variable,Spaces,Precision,EndTxt
 void MPU6050::PrintActiveOffsets() {
     uint8_t AOffsetRegister = (getDeviceID() < 0x38 )? MPU6050_RA_XA_OFFS_H:0x77;
     int16_t Data[3];
     //Serial.print(F("Offset Register 0x"));
     //Serial.print(AOffsetRegister>>4,HEX);Serial.print(AOffsetRegister&0x0F,HEX);
-    printf("\n//           X Accel  Y Accel  Z Accel   X Gyro   Y Gyro   Z Gyro\n//OFFSETS   ");
+    // tda tat in ra serial printf("\n//           X Accel  Y Accel  Z Accel   X Gyro   Y Gyro   Z Gyro\n//OFFSETS   ");
     if(AOffsetRegister == 0x06)	I2Cdev::readWords(devAddr, AOffsetRegister, 3, (uint16_t *)Data);
     else {
         I2Cdev::readWords(devAddr, AOffsetRegister, 1, (uint16_t *)Data);
@@ -3411,15 +3411,15 @@ void MPU6050::PrintActiveOffsets() {
 //	printfloatx("", Data[0], 5, 0, ",  ");
 //	printfloatx("", Data[1], 5, 0, ",  ");
 //	printfloatx("", Data[2], 5, 0, ",  ");
-    printf("%d     ,  ",Data[0]);
-    printf("%d     ,  ",Data[1]);
-    printf("%d     ,  ",Data[2]);
+    // printf("%d     ,  ",Data[0]);
+    // printf("%d     ,  ",Data[1]);
+    // printf("%d     ,  ",Data[2]); // tda tat in ra serial 
     I2Cdev::readWords(devAddr, 0x13, 3, (uint16_t *)Data);
     //	XG_OFFSET_H_READ_OFFS_USR(Data);
 //	printfloatx("", Data[0], 5, 0, ",  ");
 //	printfloatx("", Data[1], 5, 0, ",  ");
 //	printfloatx("", Data[2], 5, 0, "\n");
-    printf("%d     ,  ",Data[0]);
-    printf("%d     ,  ",Data[1]);
-    printf("%d     \n",Data[2]);
+    // printf("%d     ,  ",Data[0]);
+    // printf("%d     ,  ",Data[1]);
+    // printf("%d     \n",Data[2]); // tda tat in ra serial 
 }

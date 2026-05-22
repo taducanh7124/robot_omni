@@ -228,13 +228,13 @@ int8_t I2Cdev::readBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length,
                          uint8_t *data, uint16_t timeout)
 {
 #ifdef I2CDEV_SERIAL_DEBUG
-    Serial.print("I2C (0x");
-    Serial.print(devAddr, HEX);
-    Serial.print(") reading ");
-    Serial.print(length, DEC);
-    Serial.print(" bytes from 0x");
-    Serial.print(regAddr, HEX);
-    Serial.print("...");
+    // Serial.print("I2C (0x"); // tda tat in ra serial
+    // Serial.print(devAddr, HEX);
+    // Serial.print(") reading ");
+    // Serial.print(length, DEC);
+    // Serial.print(" bytes from 0x");
+    // Serial.print(regAddr, HEX);
+    // Serial.print("...");
 #endif
 
     int8_t count = 0;
@@ -258,8 +258,8 @@ int8_t I2Cdev::readBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length,
       for (; Wire.available() && (timeout == 0 || millis() - t1 < timeout); count++) {
         data[count] = Wire.receive();
 #ifdef I2CDEV_SERIAL_DEBUG
-        Serial.print(data[count], HEX);
-        if (count + 1 < length) Serial.print(" ");
+        // Serial.print(data[count], HEX); // tda tat in ra serial
+        // if (count + 1 < length) Serial.print(" ");
 #endif
       }
 
@@ -282,8 +282,8 @@ int8_t I2Cdev::readBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length,
       for (; Wire.available() && (timeout == 0 || millis() - t1 < timeout); count++) {
         data[count] = Wire.read();
 #ifdef I2CDEV_SERIAL_DEBUG
-        Serial.print(data[count], HEX);
-        if (count + 1 < length) Serial.print(" ");
+        // Serial.print(data[count], HEX); // tda tat in ra serial
+        // if (count + 1 < length) Serial.print(" ");
 #endif
       }
 
@@ -306,8 +306,8 @@ int8_t I2Cdev::readBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length,
       for (; Wire.available() && (timeout == 0 || millis() - t1 < timeout); count++) {
         data[count] = Wire.read();
 #ifdef I2CDEV_SERIAL_DEBUG
-        Serial.print(data[count], HEX);
-        if (count + 1 < length) Serial.print(" ");
+        // Serial.print(data[count], HEX); // tda tat in ra serial
+        // if (count + 1 < length) Serial.print(" ");
 #endif
       }
 
@@ -350,9 +350,9 @@ int8_t I2Cdev::readBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length,
 #endif
 
 #ifdef I2CDEV_SERIAL_DEBUG
-    Serial.print(". Done (");
-    Serial.print(count, DEC);
-    Serial.println(" read).");
+    // Serial.print(". Done ("); // tda tat in ra serial
+    // Serial.print(count, DEC);
+    // Serial.println(" read).");
 #endif
 
     return count;
@@ -370,13 +370,13 @@ int8_t I2Cdev::readWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
                          uint16_t *data, uint16_t timeout)
 {
 #ifdef I2CDEV_SERIAL_DEBUG
-    Serial.print("I2C (0x");
-    Serial.print(devAddr, HEX);
-    Serial.print(") reading ");
-    Serial.print(length, DEC);
-    Serial.print(" words from 0x");
-    Serial.print(regAddr, HEX);
-    Serial.print("...");
+    // Serial.print("I2C (0x"); // tda tat in ra serial
+    // Serial.print(devAddr, HEX);
+    // Serial.print(") reading ");
+    // Serial.print(length, DEC);
+    // Serial.print(" words from 0x");
+    // Serial.print(regAddr, HEX);
+    // Serial.print("...");
 #endif
 
     int8_t count = 0;
@@ -406,8 +406,8 @@ int8_t I2Cdev::readWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
           // second byte is bits 7-0 (LSb=0)
           data[count] |= Wire.receive();
 #ifdef I2CDEV_SERIAL_DEBUG
-          Serial.print(data[count], HEX);
-          if (count + 1 < length) Serial.print(" ");
+          // Serial.print(data[count], HEX); // tda tat in ra serial
+          // if (count + 1 < length) Serial.print(" ");
 #endif
           count++;
         }
@@ -439,8 +439,8 @@ int8_t I2Cdev::readWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
           // second byte is bits 7-0 (LSb=0)
           data[count] |= Wire.read();
 #ifdef I2CDEV_SERIAL_DEBUG
-          Serial.print(data[count], HEX);
-          if (count + 1 < length) Serial.print(" ");
+          // Serial.print(data[count], HEX);
+          // if (count + 1 < length) Serial.print(" "); // tda tat in ra serial
 #endif
           count++;
         }
@@ -472,8 +472,8 @@ int8_t I2Cdev::readWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
           // second byte is bits 7-0 (LSb=0)
           data[count] |= Wire.read();
 #ifdef I2CDEV_SERIAL_DEBUG
-          Serial.print(data[count], HEX);
-          if (count + 1 < length) Serial.print(" ");
+          // Serial.print(data[count], HEX);
+          // if (count + 1 < length) Serial.print(" "); // tda tat in ra serial
 #endif
           count++;
         }
@@ -526,9 +526,9 @@ int8_t I2Cdev::readWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
 #endif
 
 #ifdef I2CDEV_SERIAL_DEBUG
-    Serial.print(". Done (");
-    Serial.print(count, DEC);
-    Serial.println(" read).");
+    // Serial.print(". Done (");
+    // Serial.print(count, DEC);
+    // Serial.println(" read)."); // tda tat in ra serial
 #endif
     free(cache);
     return count;
@@ -667,13 +667,13 @@ bool I2Cdev::writeBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length,
                         uint8_t *data)
 {
 #ifdef I2CDEV_SERIAL_DEBUG
-    Serial.print("I2C (0x");
-    Serial.print(devAddr, HEX);
-    Serial.print(") writing ");
-    Serial.print(length, DEC);
-    Serial.print(" bytes to 0x");
-    Serial.print(regAddr, HEX);
-    Serial.print("...");
+    // Serial.print("I2C (0x");
+    // Serial.print(devAddr, HEX);
+    // Serial.print(") writing ");
+    // Serial.print(length, DEC);
+    // Serial.print(" bytes to 0x");
+    // Serial.print(regAddr, HEX);
+    // Serial.print("..."); // tda tat in ra serial
 #endif
     uint8_t status = 0;
 #if ((I2CDEV_IMPLEMENTATION == I2CDEV_ARDUINO_WIRE && ARDUINO < 100) || I2CDEV_IMPLEMENTATION == I2CDEV_BUILTIN_NBWIRE)
@@ -691,11 +691,11 @@ bool I2Cdev::writeBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length,
         Wire.write((uint8_t) data[i]);
 #elif (I2CDEV_IMPLEMENTATION == I2CDEV_BUILTIN_FASTWIRE)
         status = Fastwire::write(devAddr, regAddr, data[i]);
-        Serial.println(status);
+        // Serial.println(status); // tda tat in ra serial
 #endif
 #ifdef I2CDEV_SERIAL_DEBUG
-        Serial.print(data[i], HEX);
-        if (i + 1 < length) Serial.print(" ");
+        // Serial.print(data[i], HEX);
+        // if (i + 1 < length) Serial.print(" "); // tda tat in ra serial
 #endif
     }
 #if ((I2CDEV_IMPLEMENTATION == I2CDEV_ARDUINO_WIRE && ARDUINO < 100) || I2CDEV_IMPLEMENTATION == I2CDEV_BUILTIN_NBWIRE)
@@ -704,7 +704,7 @@ bool I2Cdev::writeBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length,
     status = Wire.endTransmission();
 #endif
 #ifdef I2CDEV_SERIAL_DEBUG
-    Serial.println(". Done.");
+    // Serial.println(". Done."); // tda tat in ra serial
 #endif
 
 #if (I2CDEV_IMPLEMENTATION == I2CDEV_MSP430)
@@ -737,13 +737,13 @@ bool I2Cdev::writeWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
                         uint16_t *data)
 {
 #ifdef I2CDEV_SERIAL_DEBUG
-    Serial.print("I2C (0x");
-    Serial.print(devAddr, HEX);
-    Serial.print(") writing ");
-    Serial.print(length, DEC);
-    Serial.print(" words to 0x");
-    Serial.print(regAddr, HEX);
-    Serial.print("...");
+    // Serial.print("I2C (0x");
+    // Serial.print(devAddr, HEX);
+    // Serial.print(") writing ");
+    // Serial.print(length, DEC);
+    // Serial.print(" words to 0x");
+    // Serial.print(regAddr, HEX);
+    // Serial.print("..."); // tda tat in ra serial
 #endif
     uint8_t status = 0;
     uint8_t *cache=(uint8_t*)malloc(sizeof(uint8_t)*length);
@@ -809,8 +809,8 @@ bool I2Cdev::writeWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
 
 #endif
 #ifdef I2CDEV_SERIAL_DEBUG
-        Serial.print(data[i], HEX);
-        if (i + 1 < length) Serial.print(" ");
+        // Serial.print(data[i], HEX);
+        // if (i + 1 < length) Serial.print(" "); // tda tat in ra serial
 #endif
     }
 #if ((I2CDEV_IMPLEMENTATION == I2CDEV_ARDUINO_WIRE && ARDUINO < 100) || I2CDEV_IMPLEMENTATION == I2CDEV_BUILTIN_NBWIRE)
@@ -835,7 +835,7 @@ bool I2Cdev::writeWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
                                I2C_MEMADD_SIZE_8BIT, (uint8_t *) cache, length*2, I2CDEV_DEFAULT_WRITE_TIMEOUT);
 #endif
 #ifdef I2CDEV_SERIAL_DEBUG
-    Serial.println(". Done.");
+    // Serial.println(". Done."); // tda tat in ra serial
 #endif
     free(cache);
     return status == 0;

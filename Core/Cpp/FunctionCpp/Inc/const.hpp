@@ -18,6 +18,9 @@
 #define MET1XUNG (CHUVIBANH / XUNG1VONG) // MET So met tuong duong 1 xung
 #define XUNG1MET (1.0f / MET1XUNG)       // XUNG So xung tuong duong 1 met
 
+const float ALPHA = 0.01;     // He so de tang/giam toc tu tu cho dong co
+const float delta_ccr = 2.0f; // Khi ccrHT gan bang ccrTL, cho ccrHT = ccrTL
+
 #define TIMER_10MS 10
 #define TIMER_20MS 20
 #define TIMER_50MS 50

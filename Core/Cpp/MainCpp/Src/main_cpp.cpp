@@ -27,6 +27,8 @@ void khoiTaoSerial()
     UART_DMA_6.init(&huart6, rxBuffer, sizeof(rxBuffer));
 }
 
+float freq = 0.0f;
+
 void main_cpp()
 {
     khoiTaoMPU();
@@ -36,14 +38,19 @@ void main_cpp()
 
     uint32_t tgNhayLedCu = 0;
     uint32_t tgDieuKhienMotorCu = 0;
+    float count = 0.0f;
+    
 
     while (1)
     {
+        count++;
         // Nháy LED báo trạng thái
         if (HAL_GetTick() - tgNhayLedCu >= 1000)
         {
             tgNhayLedCu = HAL_GetTick();
             nhayLed();
+            freq = count;
+            count = 0.0f;
         }
 
         // ĐỌC IMU NGAY KHI CÓ NGẮT, đảm bảo FIFO không bao giờ bị tràn và gây lỗi

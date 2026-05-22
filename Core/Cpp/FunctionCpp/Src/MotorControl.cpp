@@ -8,9 +8,6 @@ MotorControl MotorCtr_FR;
 MotorControl MotorCtr_RL;
 MotorControl MotorCtr_RR;
 
-float ALPHA = 0.01;     // He so de tang/giam toc tu tu cho dong co
-float delta_ccr = 2.0f; // Khi ccrHT gan bang ccrTL, cho ccrHT = ccrTL
-
 // Ham khoi tao dong co robot
 void MotorControl::init(TIM_HandleTypeDef *htimPWM, uint32_t timerChannel, GPIO_TypeDef *dirPort, uint16_t dirPin)
 {

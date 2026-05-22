@@ -41,51 +41,50 @@ void debug_nhanDuLieu()
     // Nếu chưa có cờ thì thoát tam thoi tat
     // if (!robot.state.isDataNew)
     //     return;
-
     // Hạ cờ
     // robot.state.isDataNew = false;
 
-    if (hrxdata.isReadData == false)
+    if (hrxdata.isReadData == true) // Neu du lieu da duoc xu li thì thoat
+        return;
+
+    // Tách dữ liệu từ uart bằng sscanf
+    if (sscanf((char *)hrxdata.rxData, "%f,%f,%f", &v_robot, &w_robot, &theta_robot) == 3)
     {
-        // Tách dữ liệu từ uart bằng sscanf
-        if (sscanf((char *)hrxdata.rxData, "%f,%f,%f", &v_robot, &w_robot, &theta_robot) == 3)
+        tgNhanDuLieuCu = HAL_GetTick(); // Cập nhật thời điểm nhận dữ liệu
+
+        // Giới hạn tốc độ tối đa
+        if (v_robot > 30) // ccr
         {
-            tgNhanDuLieuCu = HAL_GetTick(); // Cập nhật thời điểm nhận dữ liệu
-
-            // Giới hạn tốc độ tối đa
-            if (v_robot > 30) // ccr
-            {
-                v_robot = 30.0f;
-            }
-            if (fabsf(w_robot) > 0.7f) // rad/s
-            {
-                w_robot = (w_robot > 0) ? 0.7f : -0.7f;
-            }
-
-            // 1. TÍNH VẬN TỐC vx, vy
-            vx = v_robot * cosf(theta_robot);
-            vy = v_robot * sinf(theta_robot);
-
-            // 2. Tinh van toc tung banh
-            v_fl = vx - vy - (w_robot * lxy);
-            v_fr = vx + vy + (w_robot * lxy);
-            v_rl = vx + vy - (w_robot * lxy);
-            v_rr = vx - vy + (w_robot * lxy);
-
-            // // 3. MAP TỪ m/s SANG CCR // tam thoi tat, tinh trong motor control // chua co du lieu thuc te
-            // ccr_fl = fabsf(v_fl);
-            // ccr_fr = fabsf(v_fr);
-            // ccr_rl = fabsf(v_rl);
-            // ccr_rr = fabsf(v_rr);
-
-            // 4. GÁN giá trị vận tốc
-            robot.motor_front_left.ccrTL = v_fl;
-            robot.motor_rear_left.ccrTL = v_rl;
-            robot.motor_front_right.ccrTL = v_fr;
-            robot.motor_rear_right.ccrTL = v_rr;
+            v_robot = 30.0f;
         }
-        hrxdata.isReadData = true; // Phất cờ báo có dữ liệu mới đã đọc xong
+        if (fabsf(w_robot) > 0.7f) // rad/s
+        {
+            w_robot = (w_robot > 0) ? 0.7f : -0.7f;
+        }
+
+        // 1. TÍNH VẬN TỐC vx, vy
+        vx = v_robot * cosf(theta_robot);
+        vy = v_robot * sinf(theta_robot);
+
+        // 2. Tinh van toc tung banh
+        v_fl = vx - vy - (w_robot * lxy);
+        v_fr = vx + vy + (w_robot * lxy);
+        v_rl = vx + vy - (w_robot * lxy);
+        v_rr = vx - vy + (w_robot * lxy);
+
+        // // 3. MAP TỪ m/s SANG CCR // tam thoi tat, tinh trong motor control // chua co du lieu thuc te
+        // ccr_fl = fabsf(v_fl);
+        // ccr_fr = fabsf(v_fr);
+        // ccr_rl = fabsf(v_rl);
+        // ccr_rr = fabsf(v_rr);
+
+        // 4. GÁN giá trị vận tốc
+        robot.motor_front_left.ccrTL = v_fl;
+        robot.motor_rear_left.ccrTL = v_rl;
+        robot.motor_front_right.ccrTL = v_fr;
+        robot.motor_rear_right.ccrTL = v_rr;
     }
+    hrxdata.isReadData = true; // Phất cờ báo có dữ liệu mới đã đọc xong, ke ca co loi khong doc duoc
 }
 
 // Hàm gửi dữ liệu odometry ra UART cho pi
