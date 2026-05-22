@@ -6,9 +6,12 @@ SourceFiles=..\Core\Src\main.c;..\Core\Src\gpio.c;..\Core\Src\dma.c;..\Core\Src\
 HeaderPath=..\Drivers\STM32F4xx_HAL_Driver\Inc;..\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy;..\Drivers\CMSIS\Device\ST\STM32F4xx\Include;..\Drivers\CMSIS\Include;..\Core\Inc;
 CDefines=USE_HAL_DRIVER;STM32F411xE;USE_HAL_DRIVER;USE_HAL_DRIVER;
 
+<<<<<<< HEAD
 []
 SourceFiles=;;
 
+=======
+>>>>>>> upstream/main
 [PreviousGenFiles]
 AdvancedFolderStructure=true
 HeaderFileListSize=8

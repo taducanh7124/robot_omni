@@ -3,6 +3,7 @@
 #include "tim.h"
 #include "usart.h"
 #include "led_main.hpp"
+<<<<<<< HEAD
 #include "input_output.hpp"
 #include "MotorControl.hpp"
 #include "data.hpp"
@@ -18,6 +19,12 @@ char line[64];
 
 // Hàm Parse Float (đã viết ở câu trước)
 extern bool Parse_Robot_Command_Float(const char *str);
+=======
+#include "UART_DMA.hpp"
+#include "input_output.hpp"
+#include "MotorControl.hpp"
+#include "data.hpp"
+>>>>>>> upstream/main
 
 void khoiTaoEncoder()
 {
@@ -32,6 +39,7 @@ void khoiTaoMotor()
     MotorCtr_FR.init(&htim5, TIM_CHANNEL_2, DIR2_GPIO_Port, DIR2_Pin);
     MotorCtr_RR.init(&htim5, TIM_CHANNEL_3, DIR3_GPIO_Port, DIR3_Pin);
     MotorCtr_RL.init(&htim5, TIM_CHANNEL_4, DIR4_GPIO_Port, DIR4_Pin);
+<<<<<<< HEAD
 
     // timer cho PID
     HAL_TIM_Base_Start_IT(&htim10);
@@ -48,6 +56,14 @@ uint32_t timeMain = 0;
 uint32_t testTimerMain = 0;
 uint32_t loopCount = 0;
 
+=======
+}
+void khoiTaoSerial()
+{
+    UART_DMA_6.init(&huart6, rxBuffer, sizeof(rxBuffer));
+}
+
+>>>>>>> upstream/main
 void main_cpp()
 {
     khoiTaoMPU();
@@ -58,6 +74,7 @@ void main_cpp()
     uint32_t tgNhayLedCu = 0;
     uint32_t tgDieuKhienMotorCu = 0;
 
+<<<<<<< HEAD
     // while (1)
     // {
     //     HAL_UART_Transmit_DMA(&huart6, (uint8_t *)"Robot Omni Started!\n", 21);
@@ -74,6 +91,10 @@ void main_cpp()
             loopCount = 0;
         }
 
+=======
+    while (1)
+    {
+>>>>>>> upstream/main
         // Nháy LED báo trạng thái
         if (HAL_GetTick() - tgNhayLedCu >= 1000)
         {
@@ -86,6 +107,7 @@ void main_cpp()
         {
             isDMPNewData = false; // Xóa cờ ngắt
             tinhThongSoGoc();     // Cập nhật ngay lập tức góc Yaw và Vận tốc góc yaw
+<<<<<<< HEAD
 
             // số lần tính toán
             timerCount++;
@@ -113,6 +135,12 @@ void main_cpp()
                 // Chạy hàm điều khiển động cơ tại đây...
             }
         }
+=======
+        }
+
+        // Nhan du lieu dieu khien dao vao
+        debug_nhanDuLieu();
+>>>>>>> upstream/main
 
         // Dieu khien dong co du tren du lieu dau vao
         if (HAL_GetTick() - tgDieuKhienMotorCu >= 10)
@@ -131,13 +159,17 @@ void main_cpp()
 
 extern "C"
 {
+<<<<<<< HEAD
     // uint32_t testTimer_mpu = 0;
     // uint32_t timerCount_mpu = 0;
+=======
+>>>>>>> upstream/main
     void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     {
         if (GPIO_Pin == IMU_EXTI_Pin)
         {
             isDMPNewData = true;
+<<<<<<< HEAD
 
             // // số lần ngắt /1s
             // timerCount_mpu++;
@@ -156,6 +188,8 @@ extern "C"
         if (htim->Instance == TIM10)
         {
             tinhTargetWheelSpeeds_c(); // Tính toán tốc độ bánh xe mục tiêu mỗi 10ms
+=======
+>>>>>>> upstream/main
         }
     }
 }

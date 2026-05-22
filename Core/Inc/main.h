@@ -89,7 +89,10 @@ void Error_Handler(void);
 #define P4_GPIO_Port GPIOB
 #define IMU_EXTI_Pin GPIO_PIN_7
 #define IMU_EXTI_GPIO_Port GPIOB
+<<<<<<< HEAD
 #define IMU_EXTI_EXTI_IRQn EXTI9_5_IRQn
+=======
+>>>>>>> upstream/main
 #define SCL_Pin GPIO_PIN_8
 #define SCL_GPIO_Port GPIOB
 #define SDA_Pin GPIO_PIN_9

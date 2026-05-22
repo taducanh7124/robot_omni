@@ -91,6 +91,7 @@
 1508	1885	8010456861570682	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/BrowseInfo/Src_7821948545060211837.dir/MotorControl.cpp.json	8fa40fa426d082f1
 1886	2326	8010456865350703	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/BrowseInfo/Src_12570655901977010115.dir/UART_DMA.cpp.json	7d273557ca982333
 2327	2641	8010456869760683	C:/Users/taduc/Documents/STM32 IAR/ENCODER_1_KENH_1/EWARM/ENCODER_1_KENH_1/BrowseInfo/compile_commands.json	d9e53549574a8975
+<<<<<<< HEAD
 13	194	8010362859287272	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/BrowseInfo/Src_3700818245239657199.dir/const.cpp.json	7ee2d496d3b17695
 196	310	8010362861193078	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/BrowseInfo/Src_1529562927721204863.dir/data.cpp.json	42f889cc650fd7d3
 312	420	8010362862346909	C:/Users/leduy/Downloads/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/BrowseInfo/Src_10526937373471115177.dir/input_output.cpp.json	c11a8967252926b5
@@ -172,3 +173,5 @@
 3439	3530	8011244646439314	G:/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/BrowseInfo/Src_15860686561163946261.dir/stm32f4xx_hal_tim_ex.c.json	2a7df91e61875d68
 3531	3620	8011244647356106	G:/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/BrowseInfo/Src_17366709354581954614.dir/stm32f4xx_hal_uart.c.json	3f0048772ca77a0d
 3621	3719	8011244648255201	G:/stm32_robot_nguoi/robot_omni-main/robot_omni-main/EWARM/ENCODER_1_KENH_1/BrowseInfo/compile_commands.json	6fbd87c79b25ce5
+=======
+>>>>>>> upstream/main

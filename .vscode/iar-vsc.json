@@ -16,3 +16,21 @@
     "path": "g:\\IAR"
   }
 }
+{
+  "workspace": {
+    "path": "${workspaceFolder}\\EWARM\\Project.eww"
+  },
+  "workspaces": {
+    "${workspaceFolder}\\EWARM\\Project.eww": {
+      "configs": {
+        "${workspaceFolder}\\EWARM\\ENCODER_1_KENH_1.ewp": "ENCODER_1_KENH_1"
+      },
+      "selected": {
+        "path": "${workspaceFolder}\\EWARM\\ENCODER_1_KENH_1.ewp"
+      }
+    }
+  },
+  "workbench": {
+    "path": "C:\\iar\\ewarm-9.70.4"
+  }
+}

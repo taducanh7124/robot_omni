@@ -27,7 +27,10 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "main_cpp.hpp"
+<<<<<<< HEAD
 #include "pid_controller.hpp"
+=======
+>>>>>>> upstream/main
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -66,7 +69,11 @@ void SystemClock_Config(void);
   * @brief  The application entry point.
   * @retval int
   */
+<<<<<<< HEAD
 int main(void)
+=======
+ int main(void)
+>>>>>>> upstream/main
 {
 
   /* USER CODE BEGIN 1 */
@@ -99,7 +106,10 @@ int main(void)
   MX_TIM5_Init();
   MX_USART6_UART_Init();
   MX_I2C1_Init();
+<<<<<<< HEAD
   MX_TIM10_Init();
+=======
+>>>>>>> upstream/main
   /* USER CODE BEGIN 2 */
   main_cpp();
   /* USER CODE END 2 */

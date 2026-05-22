@@ -55,11 +55,16 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
+<<<<<<< HEAD
 extern TIM_HandleTypeDef htim1;
 extern TIM_HandleTypeDef htim10;
 extern DMA_HandleTypeDef hdma_usart6_tx;
 extern DMA_HandleTypeDef hdma_usart6_rx;
 extern UART_HandleTypeDef huart6;
+=======
+extern DMA_HandleTypeDef hdma_usart6_tx;
+extern DMA_HandleTypeDef hdma_usart6_rx;
+>>>>>>> upstream/main
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
@@ -203,6 +208,7 @@ void SysTick_Handler(void)
 /******************************************************************************/
 
 /**
+<<<<<<< HEAD
   * @brief This function handles EXTI line[9:5] interrupts.
   */
 void EXTI9_5_IRQHandler(void)
@@ -232,6 +238,8 @@ void TIM1_UP_TIM10_IRQHandler(void)
 }
 
 /**
+=======
+>>>>>>> upstream/main
   * @brief This function handles DMA2 stream1 global interrupt.
   */
 void DMA2_Stream1_IRQHandler(void)
@@ -259,6 +267,7 @@ void DMA2_Stream6_IRQHandler(void)
   /* USER CODE END DMA2_Stream6_IRQn 1 */
 }
 
+<<<<<<< HEAD
 /**
   * @brief This function handles USART6 global interrupt.
   */
@@ -273,6 +282,8 @@ void USART6_IRQHandler(void)
   /* USER CODE END USART6_IRQn 1 */
 }
 
+=======
+>>>>>>> upstream/main
 /* USER CODE BEGIN 1 */
 
 /* USER CODE END 1 */

@@ -91,7 +91,11 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pin = DIR4_Pin|DIR3_Pin|DIR2_Pin|DIR1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
+<<<<<<< HEAD
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+=======
+  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_MEDIUM;
+>>>>>>> upstream/main
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pin : IMU_EXTI_Pin */
@@ -100,10 +104,13 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_PULLDOWN;
   HAL_GPIO_Init(IMU_EXTI_GPIO_Port, &GPIO_InitStruct);
 
+<<<<<<< HEAD
   /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
 
+=======
+>>>>>>> upstream/main
 }
 
 /* USER CODE BEGIN 2 */

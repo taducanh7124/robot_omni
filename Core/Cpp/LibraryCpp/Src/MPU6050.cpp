@@ -2785,13 +2785,21 @@ int8_t MPU6050::GetCurrentFIFOPacket(uint8_t *data, uint8_t length)
         }
         if (!fifoC)
         {
+<<<<<<< HEAD
             //printf("fifo no data!\n");
+=======
+            printf("fifo no data!\n");
+>>>>>>> upstream/main
             return 0; // Called too early no data or we timed out after FIFO Reset
         }
         // We have 1 packet
         if ((millis() - BreakTimer) > (11))
         {
+<<<<<<< HEAD
             //printf("fifo wait too long!\n");
+=======
+            printf("fifo wait too long!\n");
+>>>>>>> upstream/main
             return 0;
         }
     }

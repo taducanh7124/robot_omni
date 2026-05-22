@@ -1,8 +1,13 @@
 {
 	"arguments" : 
 	[
+<<<<<<< HEAD
 		"G:\\IAR\\arm\\bin\\iccarm.exe",
 		"G:\\stm32_robot_nguoi\\robot_omni-main\\robot_omni-main\\Core\\Cpp\\FunctionCpp\\Src\\data.cpp",
+=======
+		"C:\\iar\\ewarm-9.70.4\\arm\\bin\\iccarm.exe",
+		"C:\\Users\\taduc\\Documents\\STM32 IAR\\ENCODER_1_KENH_1\\Core\\Cpp\\FunctionCpp\\Src\\data.cpp",
+>>>>>>> upstream/main
 		"-nostdinc",
 		"-undef",
 		"-Wno-unaligned-access",
@@ -10,6 +15,7 @@
 		"-ferror-limit=0",
 		"-D__IAR_CLANGD__",
 		"-isystem",
+<<<<<<< HEAD
 		"G:\\IAR\\arm\\inc\\cpp",
 		"-isystem",
 		"G:\\IAR\\arm\\inc\\c\\aarch32",
@@ -33,6 +39,31 @@
 		"G:\\stm32_robot_nguoi\\robot_omni-main\\robot_omni-main\\Core\\Cpp\\FunctionCpp\\Inc\\",
 		"-I",
 		"G:\\stm32_robot_nguoi\\robot_omni-main\\robot_omni-main\\Core\\Cpp\\LibraryCpp\\Inc\\",
+=======
+		"C:\\iar\\ewarm-9.70.4\\arm\\inc\\cpp",
+		"-isystem",
+		"C:\\iar\\ewarm-9.70.4\\arm\\inc\\c\\aarch32",
+		"-isystem",
+		"C:\\iar\\ewarm-9.70.4\\arm\\inc",
+		"-isystem",
+		"C:\\iar\\ewarm-9.70.4\\arm\\inc\\c",
+		"-I",
+		"C:\\Users\\taduc\\Documents\\STM32 IAR\\ENCODER_1_KENH_1\\Core\\Inc\\",
+		"-I",
+		"C:\\Users\\taduc\\Documents\\STM32 IAR\\ENCODER_1_KENH_1\\Drivers\\STM32F4xx_HAL_Driver\\Inc\\",
+		"-I",
+		"C:\\Users\\taduc\\Documents\\STM32 IAR\\ENCODER_1_KENH_1\\Drivers\\STM32F4xx_HAL_Driver\\Inc\\Legacy\\",
+		"-I",
+		"C:\\Users\\taduc\\Documents\\STM32 IAR\\ENCODER_1_KENH_1\\Drivers\\CMSIS\\Device\\ST\\STM32F4xx\\Include\\",
+		"-I",
+		"C:\\Users\\taduc\\Documents\\STM32 IAR\\ENCODER_1_KENH_1\\Drivers\\CMSIS\\Include\\",
+		"-I",
+		"C:\\Users\\taduc\\Documents\\STM32 IAR\\ENCODER_1_KENH_1\\Core\\Cpp\\MainCpp\\Inc\\",
+		"-I",
+		"C:\\Users\\taduc\\Documents\\STM32 IAR\\ENCODER_1_KENH_1\\Core\\Cpp\\FunctionCpp\\Inc\\",
+		"-I",
+		"C:\\Users\\taduc\\Documents\\STM32 IAR\\ENCODER_1_KENH_1\\Core\\Cpp\\LibraryCpp\\Inc\\",
+>>>>>>> upstream/main
 		"--target=armv7m-none-eabi",
 		"-D",
 		"__CHAR_BITS__=8",
@@ -963,9 +994,15 @@
 		"-D",
 		"__EDG_INT128_EXTENSIONS_ALLOWED=0",
 		"-D",
+<<<<<<< HEAD
 		"_DLIB_CONFIG_FILE_HEADER_NAME=\"G:\\IAR\\arm\\inc\\c\\DLib_Config_Full.h\"",
 		"-D",
 		"_DLIB_CONFIG_FILE_STRING=\"G:\\\\IAR\\\\arm\\\\inc\\\\c\\\\DLib_Config_Full.h\"",
+=======
+		"_DLIB_CONFIG_FILE_HEADER_NAME=\"C:\\iar\\ewarm-9.70.4\\arm\\inc\\c\\DLib_Config_Full.h\"",
+		"-D",
+		"_DLIB_CONFIG_FILE_STRING=\"C:\\\\iar\\\\ewarm-9.70.4\\\\arm\\\\inc\\\\c\\\\DLib_Config_Full.h\"",
+>>>>>>> upstream/main
 		"-D",
 		"__VERSION__=\"IAR ANSI C/C++ Compiler V9.70.4.588/W64 for ARM\"",
 		"-D",
@@ -1070,7 +1107,13 @@
 		"-x",
 		"c++"
 	],
+<<<<<<< HEAD
 	"directory" : "G:\\stm32_robot_nguoi\\robot_omni-main\\robot_omni-main\\Core\\Cpp\\FunctionCpp\\Src",
 	"file" : "G:\\stm32_robot_nguoi\\robot_omni-main\\robot_omni-main\\Core\\Cpp\\FunctionCpp\\Src\\data.cpp",
 	"output" : "G:\\stm32_robot_nguoi\\robot_omni-main\\robot_omni-main\\EWARM\\ENCODER_1_KENH_1\\Obj\\Src_8308038492197328671.dir\\data.o"
+=======
+	"directory" : "C:\\Users\\taduc\\Documents\\STM32 IAR\\ENCODER_1_KENH_1\\Core\\Cpp\\FunctionCpp\\Src",
+	"file" : "C:\\Users\\taduc\\Documents\\STM32 IAR\\ENCODER_1_KENH_1\\Core\\Cpp\\FunctionCpp\\Src\\data.cpp",
+	"output" : "C:\\Users\\taduc\\Documents\\STM32 IAR\\ENCODER_1_KENH_1\\EWARM\\ENCODER_1_KENH_1\\Obj\\Src_8308038492197328671.dir\\data.o"
+>>>>>>> upstream/main
 }

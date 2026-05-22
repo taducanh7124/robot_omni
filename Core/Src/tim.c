@@ -29,7 +29,10 @@ TIM_HandleTypeDef htim2;
 TIM_HandleTypeDef htim3;
 TIM_HandleTypeDef htim4;
 TIM_HandleTypeDef htim5;
+<<<<<<< HEAD
 TIM_HandleTypeDef htim10;
+=======
+>>>>>>> upstream/main
 
 /* TIM1 init function */
 void MX_TIM1_Init(void)
@@ -92,7 +95,11 @@ void MX_TIM2_Init(void)
   htim2.Instance = TIM2;
   htim2.Init.Prescaler = 0;
   htim2.Init.CounterMode = TIM_COUNTERMODE_UP;
+<<<<<<< HEAD
   htim2.Init.Period = 65535;
+=======
+  htim2.Init.Period = 4294967295;
+>>>>>>> upstream/main
   htim2.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;
   htim2.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
   if (HAL_TIM_Base_Init(&htim2) != HAL_OK)
@@ -260,6 +267,7 @@ void MX_TIM5_Init(void)
   HAL_TIM_MspPostInit(&htim5);
 
 }
+<<<<<<< HEAD
 /* TIM10 init function */
 void MX_TIM10_Init(void)
 {
@@ -286,6 +294,8 @@ void MX_TIM10_Init(void)
   /* USER CODE END TIM10_Init 2 */
 
 }
+=======
+>>>>>>> upstream/main
 
 void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* tim_baseHandle)
 {
@@ -310,9 +320,12 @@ void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* tim_baseHandle)
     GPIO_InitStruct.Alternate = GPIO_AF1_TIM1;
     HAL_GPIO_Init(P1_GPIO_Port, &GPIO_InitStruct);
 
+<<<<<<< HEAD
     /* TIM1 interrupt Init */
     HAL_NVIC_SetPriority(TIM1_UP_TIM10_IRQn, 0, 0);
     HAL_NVIC_EnableIRQ(TIM1_UP_TIM10_IRQn);
+=======
+>>>>>>> upstream/main
   /* USER CODE BEGIN TIM1_MspInit 1 */
 
   /* USER CODE END TIM1_MspInit 1 */
@@ -386,6 +399,7 @@ void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* tim_baseHandle)
 
   /* USER CODE END TIM4_MspInit 1 */
   }
+<<<<<<< HEAD
   else if(tim_baseHandle->Instance==TIM10)
   {
   /* USER CODE BEGIN TIM10_MspInit 0 */
@@ -401,6 +415,8 @@ void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* tim_baseHandle)
 
   /* USER CODE END TIM10_MspInit 1 */
   }
+=======
+>>>>>>> upstream/main
 }
 
 void HAL_TIM_PWM_MspInit(TIM_HandleTypeDef* tim_pwmHandle)
@@ -465,6 +481,7 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
     */
     HAL_GPIO_DeInit(P1_GPIO_Port, P1_Pin);
 
+<<<<<<< HEAD
     /* TIM1 interrupt Deinit */
   /* USER CODE BEGIN TIM1:TIM1_UP_TIM10_IRQn disable */
     /**
@@ -474,6 +491,8 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
     /* HAL_NVIC_DisableIRQ(TIM1_UP_TIM10_IRQn); */
   /* USER CODE END TIM1:TIM1_UP_TIM10_IRQn disable */
 
+=======
+>>>>>>> upstream/main
   /* USER CODE BEGIN TIM1_MspDeInit 1 */
 
   /* USER CODE END TIM1_MspDeInit 1 */
@@ -529,6 +548,7 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
 
   /* USER CODE END TIM4_MspDeInit 1 */
   }
+<<<<<<< HEAD
   else if(tim_baseHandle->Instance==TIM10)
   {
   /* USER CODE BEGIN TIM10_MspDeInit 0 */
@@ -550,6 +570,8 @@ void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
 
   /* USER CODE END TIM10_MspDeInit 1 */
   }
+=======
+>>>>>>> upstream/main
 }
 
 void HAL_TIM_PWM_MspDeInit(TIM_HandleTypeDef* tim_pwmHandle)

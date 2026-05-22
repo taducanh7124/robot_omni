@@ -503,10 +503,14 @@ int8_t I2Cdev::readWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
     //TODO implement
 
 #elif (I2CDEV_IMPLEMENTATION == I2CDEV_STM32_HAL)
+<<<<<<< HEAD
     // uint8_t * cache=(uint8_t*)malloc(sizeof(uint8_t)*2*length);
 
     uint8_t cache[32];
 
+=======
+    uint8_t * cache=(uint8_t*)malloc(sizeof(uint8_t)*2*length);
+>>>>>>> upstream/main
     HAL_StatusTypeDef status = HAL_I2C_Mem_Read(&hi2c1, devAddr << 1, regAddr,
                                                 I2C_MEMADD_SIZE_8BIT, cache, length*2, timeout);
     if (status == HAL_OK)
@@ -533,7 +537,11 @@ int8_t I2Cdev::readWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
     Serial.print(count, DEC);
     Serial.println(" read).");
 #endif
+<<<<<<< HEAD
     //free(cache);
+=======
+    free(cache);
+>>>>>>> upstream/main
     return count;
 }
 
@@ -749,7 +757,11 @@ bool I2Cdev::writeWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
     Serial.print("...");
 #endif
     uint8_t status = 0;
+<<<<<<< HEAD
     uint8_t cache[32];
+=======
+    uint8_t *cache=(uint8_t*)malloc(sizeof(uint8_t)*length);
+>>>>>>> upstream/main
 #if ((I2CDEV_IMPLEMENTATION == I2CDEV_ARDUINO_WIRE && ARDUINO < 100) || I2CDEV_IMPLEMENTATION == I2CDEV_BUILTIN_NBWIRE)
     Wire.beginTransmission(devAddr);
     Wire.send(regAddr); // send address
@@ -840,7 +852,11 @@ bool I2Cdev::writeWords(uint8_t devAddr, uint8_t regAddr, uint8_t length,
 #ifdef I2CDEV_SERIAL_DEBUG
     Serial.println(". Done.");
 #endif
+<<<<<<< HEAD
     //free(cache);
+=======
+    free(cache);
+>>>>>>> upstream/main
     return status == 0;
 }
 
