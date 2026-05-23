@@ -1,6 +1,7 @@
 #include "MotorControl.hpp"
 #include <math.h>
 #include "const.hpp"
+#include "pid_controller.hpp"
 
 // Khoi tao dong co robot
 MotorControl MotorCtr_FL;
@@ -8,7 +9,7 @@ MotorControl MotorCtr_FR;
 MotorControl MotorCtr_RL;
 MotorControl MotorCtr_RR;
 
-float ALPHA = 0.01;     // He so de tang/giam toc tu tu cho dong co
+float ALPHA = 0.1;     // He so de tang/giam toc tu tu cho dong co
 float delta_ccr = 2.0f; // Khi ccrHT gan bang ccrTL, cho ccrHT = ccrTL
 
 // Ham khoi tao dong co robot
@@ -150,9 +151,15 @@ void controlOnDinhCCR()
     robot.motor_front_right.dir = (robot.motor_front_right.ccrHT >= 0) ? static_cast<uint8_t>(MotorDir::Forward) : static_cast<uint8_t>(MotorDir::Backward);
     robot.motor_rear_right.dir = (robot.motor_rear_right.ccrHT >= 0) ? static_cast<uint8_t>(MotorDir::Forward) : static_cast<uint8_t>(MotorDir::Backward);
 
-    // ĐIỀU KHIỂN MOTOR
-    MotorCtr_FL.control((uint16_t)fabsf(robot.motor_front_left.ccrHT), static_cast<MotorDir>(robot.motor_front_left.dir));
-    MotorCtr_FR.control((uint16_t)fabsf(robot.motor_front_right.ccrHT), static_cast<MotorDir>(robot.motor_front_right.dir));
-    MotorCtr_RL.control((uint16_t)fabsf(robot.motor_rear_left.ccrHT), static_cast<MotorDir>(robot.motor_rear_left.dir));
-    MotorCtr_RR.control((uint16_t)fabsf(robot.motor_rear_right.ccrHT), static_cast<MotorDir>(robot.motor_rear_right.dir));
+    // // ĐIỀU KHIỂN MOTOR
+    // MotorCtr_FL.control((uint16_t)fabsf(robot.motor_front_left.ccrHT), static_cast<MotorDir>(robot.motor_front_left.dir));
+    // MotorCtr_FR.control((uint16_t)fabsf(robot.motor_front_right.ccrHT), static_cast<MotorDir>(robot.motor_front_right.dir));
+    // MotorCtr_RL.control((uint16_t)fabsf(robot.motor_rear_left.ccrHT), static_cast<MotorDir>(robot.motor_rear_left.dir));
+    // MotorCtr_RR.control((uint16_t)fabsf(robot.motor_rear_right.ccrHT), static_cast<MotorDir>(robot.motor_rear_right.dir));
+
+    // Dieu khien dong co du tren du lieu dau vao
+    target_w_fl = robot.motor_front_left.ccrHT;
+    target_w_fr = robot.motor_front_left.ccrHT;
+    target_w_rl = robot.motor_front_left.ccrHT;
+    target_w_rr = robot.motor_front_left.ccrHT;
 }

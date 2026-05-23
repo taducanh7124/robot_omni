@@ -147,6 +147,9 @@ void tinhThongSoGoc()
         odom_theta_deg = odom_theta_rad * (180.0f / M_PI);
 
         odom_w_rad = (mpu_w_gyro_raw[2] / 16.4f) * (M_PI / 180.0f);
+
+        static int32_t odom_theta_deg_int;
+        odom_theta_deg_int = (int)round(odom_theta_deg);
     }
 }
 
@@ -190,4 +193,6 @@ void tinhOdom()
 
     // Tích phân ra tọa độ x, y
     tinhToaDo(delta_t);
+
+    robot.state.isSendDataNew = true; // Phất cờ báo có dữ liệu mới để gửi cho pi
 }

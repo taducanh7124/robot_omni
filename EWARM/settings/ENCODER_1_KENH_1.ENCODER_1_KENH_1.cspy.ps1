@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\iar\ewarm-9.70.4\common\bin\cspybat" -f "C:\Users\taduc\Documents\STM32 IAR\ENCODER_1_KENH_1\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.general.xcl" --backend -f "C:\Users\taduc\Documents\STM32 IAR\ENCODER_1_KENH_1\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.driver.xcl" 
+& "G:\IAR\common\bin\cspybat" -f "G:\stm32_robot_nguoi\robot_omni-main\robot_omni-main\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.general.xcl" --backend -f "G:\stm32_robot_nguoi\robot_omni-main\robot_omni-main\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.driver.xcl" 
 }
 else
 {
-& "C:\iar\ewarm-9.70.4\common\bin\cspybat" -f "C:\Users\taduc\Documents\STM32 IAR\ENCODER_1_KENH_1\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\taduc\Documents\STM32 IAR\ENCODER_1_KENH_1\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.driver.xcl" 
+& "G:\IAR\common\bin\cspybat" -f "G:\stm32_robot_nguoi\robot_omni-main\robot_omni-main\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.general.xcl" --debug_file=$debugfile --backend -f "G:\stm32_robot_nguoi\robot_omni-main\robot_omni-main\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.driver.xcl" 
 }

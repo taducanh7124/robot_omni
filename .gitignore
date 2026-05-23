@@ -1,0 +1,32 @@
+# Các file build output
+*.out
+*.elf
+*.hex
+*.bin
+
+# File đối tượng và thư viện tạm
+*.o
+*.obj
+*.pdb
+*.lib
+
+# File log và debug
+*.map
+*.lst
+*.log
+
+# File cấu hình và workspace của IAR
+*.ewt
+*.ewd
+*.ewp
+# *.eww
+*.dep
+
+# Thư mục build
+Debug/
+Release/
+settings/
+
+# File backup
+*.bak
+*.tmp

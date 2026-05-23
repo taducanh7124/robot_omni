@@ -1,14 +1,14 @@
-C:\iar\ewarm-9.70.4\arm\bin\armproc.dll
+G:\IAR\arm\bin\armproc.dll
 
- C:\iar\ewarm-9.70.4\arm\bin\armstlink.dll
+ G:\IAR\arm\bin\armstlink.dll
 
- "C:\Users\taduc\Documents\STM32 IAR\ENCODER_1_KENH_1\EWARM\ENCODER_1_KENH_1\Exe\ENCODER_1_KENH_1.out"
+ G:\stm32_robot_nguoi\robot_omni-main\robot_omni-main\EWARM\ENCODER_1_KENH_1\Exe\ENCODER_1_KENH_1.out
 
- --plugin=C:\iar\ewarm-9.70.4\arm\bin\armLibSupportUniversal.dll
+ --plugin=G:\IAR\arm\bin\armLibSupportUniversal.dll
 
- --device_macro=C:\iar\ewarm-9.70.4\arm/config/debugger/ST/STM32F4xx.dmac
+ --device_macro=G:\IAR\arm/config/debugger/ST/STM32F4xx.dmac
 
- --flash_loader=C:\iar\ewarm-9.70.4\arm/config/flashloader/ST/FlashSTM32F411xE.board
+ --flash_loader=G:\IAR\arm/config/flashloader/ST/FlashSTM32F411xE.board
 
  
 

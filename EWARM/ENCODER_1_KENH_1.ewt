@@ -1828,6 +1828,9 @@
                             <file>
                                 <name>$PROJ_DIR$\..\Core\Cpp\FunctionCpp\Inc\UART_DMA.hpp</name>
                             </file>
+                            <file>
+                                <name>$PROJ_DIR$\..\Core\Cpp\FunctionCpp\Inc\uart_ring_buffer.h</name>
+                            </file>
                         </group>
                         <group>
                             <name>Src</name>
@@ -1844,7 +1847,10 @@
                                 <name>$PROJ_DIR$\..\Core\Cpp\FunctionCpp\Src\MotorControl.cpp</name>
                             </file>
                             <file>
-                                <name>$PROJ_DIR$\..\Core\Cpp\FunctionCpp\Src\UART_DMA.cpp</name>
+                                <name>$PROJ_DIR$\..\Core\Cpp\LibraryCpp\Src\pid_controller.cpp</name>
+                            </file>
+                            <file>
+                                <name>$PROJ_DIR$\..\Core\Cpp\FunctionCpp\Src\uart_ring_buffer.c</name>
                             </file>
                         </group>
                     </group>
