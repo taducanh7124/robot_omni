@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"G:\IAR\common\bin\cspybat" -f "G:\stm32_robot_nguoi\robot_omni-main\robot_omni-main\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.general.xcl" --backend -f "G:\stm32_robot_nguoi\robot_omni-main\robot_omni-main\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.driver.xcl" 
+"G:\IAR\common\bin\cspybat" -f "G:\internship\DO_AN\robot_omni\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.general.xcl" --backend -f "G:\internship\DO_AN\robot_omni\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"G:\IAR\common\bin\cspybat" -f "G:\stm32_robot_nguoi\robot_omni-main\robot_omni-main\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.general.xcl" "--debug_file=%~1" --backend -f "G:\stm32_robot_nguoi\robot_omni-main\robot_omni-main\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.driver.xcl" 
+"G:\IAR\common\bin\cspybat" -f "G:\internship\DO_AN\robot_omni\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.general.xcl" "--debug_file=%~1" --backend -f "G:\internship\DO_AN\robot_omni\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.driver.xcl" 
 
 @echo off 
 :end

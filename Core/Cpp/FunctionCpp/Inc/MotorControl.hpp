@@ -35,9 +35,10 @@ public:
 typedef struct
 {
     uint8_t dir;
-    float ccrHT;  // CCR hiện tại
-    float ccrTL;  // CCR tương lai mong muốn đạt được
-    float vanToc; // Van toc
+    double ccrHT;  // CCR hiện tại
+    double ccrTL;  // CCR tương lai mong muốn đạt được
+    double vanToc; // Van toc
+    double ccrPositive ; //ccr duong 
 } DataControl_t;
 
 // Trang thai cua robot

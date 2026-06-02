@@ -34,6 +34,21 @@ float robot_vx = 0.0f;
 float robot_vy = 0.0f;
 float robot_theta = 0.0f;
 
+float max_veloccity = 0.027f; // m/s, tương ứng với ccr 7 xung
+float max_pulse = 7.0f;       // Tương ứng với ccr 7 xung
+
+// Hàm map dành riêng cho số thực (float), bao gồm cả số âm
+float map_float(float x, float in_min, float in_max, float out_min, float out_max)
+{
+    // Nếu giá trị đầu vào vượt quá ngưỡng, ghim (clamp) nó lại để an toàn
+    if (x > in_max)
+        x = in_max;
+    if (x < in_min)
+        x = in_min;
+
+    return (x - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+}
+
 /**
  * @brief  Tách chuỗi "vx,vy,theta" (vd: "1.23,-0.5,3.14") thành 3 số thực
  * @param  str: Chuỗi đầu vào (đã được thay '\n' bằng '\0')
@@ -118,50 +133,79 @@ bool Parse_Robot_Command_Float(const char *str)
         index++;
     }
 
-    // Kiểm tra xem có nhận đủ 3 thông số không
     if (index == 3)
     {
-        // debug
+        // 1. Nhận dữ liệu vật lý gốc (m/s và rad/s)
         robot_vx = values[0];
         robot_vy = values[1];
         robot_theta = values[2];
 
-        v_robot = robot_vx;
-        w_robot = robot_vy;
-        theta_robot = robot_theta;
-        tgNhanDuLieuCu = HAL_GetTick(); // Cập nhật thời điểm nhận dữ liệu
+        tgNhanDuLieuCu = HAL_GetTick();
 
-        // Giới hạn tốc độ tối đa
-        if (v_robot > 30) // ccr
+        // GIỮ NGUYÊN đơn vị m/s để tính toán động học
+        float vx_mps = robot_vx;
+        float vy_mps = robot_vy;
+        float theta_rads = robot_theta;
+
+        // 2. Tính tốc độ thô của từng bánh theo m/s
+        v_fl = vx_mps - vy_mps - (theta_rads * lxy);
+        v_fr = vx_mps + vy_mps + (theta_rads * lxy);
+        v_rl = vx_mps + vy_mps - (theta_rads * lxy);
+        v_rr = vx_mps - vy_mps + (theta_rads * lxy);
+
+        // 3. Chuẩn hóa tỷ lệ nếu vượt quá giới hạn (Giữ đúng quỹ đạo)
+        float max_v = fabs(v_fl);
+        if (fabs(v_fr) > max_v)
+            max_v = fabs(v_fr);
+        if (fabs(v_rl) > max_v)
+            max_v = fabs(v_rl);
+        if (fabs(v_rr) > max_v)
+            max_v = fabs(v_rr);
+
+        float MAX_VELOCITY_MPS = 0.26f; // Vận tốc tối đa thực tế của bánh xe (m/s)
+        if (max_v > MAX_VELOCITY_MPS)
         {
-            v_robot = 30.0f;
+            float scale = MAX_VELOCITY_MPS / max_v;
+            v_fl *= scale;
+            v_fr *= scale;
+            v_rl *= scale;
+            v_rr *= scale;
         }
-        if (fabsf(w_robot) > 0.7f) // rad/s
+
+        // 4. Đổi từ vận tốc (m/s) sang Xung (CCR) bằng hệ số tỷ lệ tuyến tính
+        // Tránh dùng hàm map_float để tiết kiệm thời gian xử lý của vi điều khiển
+        float pulse_ratio = max_pulse / MAX_VELOCITY_MPS; // Ví dụ: 7.0f / 0.26f
+
+        robot.motor_front_left.ccrTL = v_fl * pulse_ratio;
+        robot.motor_front_right.ccrTL = v_fr * pulse_ratio;
+        robot.motor_rear_left.ccrTL = v_rl * pulse_ratio;
+        robot.motor_rear_right.ccrTL = v_rr * pulse_ratio;
+
+        // 5. GÁN giá trị tuyệt đối
+        robot.motor_front_left.ccrPositive = fabs(robot.motor_front_left.ccrTL);
+        robot.motor_rear_left.ccrPositive = fabs(robot.motor_rear_left.ccrTL);
+        robot.motor_front_right.ccrPositive = fabs(robot.motor_front_right.ccrTL);
+        robot.motor_rear_right.ccrPositive = fabs(robot.motor_rear_right.ccrTL);
+
+        // 6. Cập nhật chiều quay ĐỘC LẬP cho từng bánh xe (Bỏ điều kiện &&)
+
+        if (
+            robot.motor_front_left.ccrTL != 0)
         {
-            w_robot = (w_robot > 0) ? 0.7f : -0.7f;
+            robot.motor_front_left.dir = (robot.motor_front_left.ccrTL >= 0) ? static_cast<uint8_t>(MotorDir::Forward) : static_cast<uint8_t>(MotorDir::Backward);
         }
-
-        // 1. TÍNH VẬN TỐC vx, vy
-        vx = v_robot * cosf(theta_robot);
-        vy = v_robot * sinf(theta_robot);
-
-        // 2. Tinh van toc tung banh
-        v_fl = vx - vy - (w_robot * lxy);
-        v_fr = vx + vy + (w_robot * lxy);
-        v_rl = vx + vy - (w_robot * lxy);
-        v_rr = vx - vy + (w_robot * lxy);
-
-        // // 3. MAP TỪ m/s SANG CCR // tam thoi tat, tinh trong motor control // chua co du lieu thuc te
-        // ccr_fl = fabsf(v_fl);
-        // ccr_fr = fabsf(v_fr);
-        // ccr_rl = fabsf(v_rl);
-        // ccr_rr = fabsf(v_rr);
-
-        // 4. GÁN giá trị vận tốc
-        robot.motor_front_left.ccrTL = v_fl;
-        robot.motor_rear_left.ccrTL = v_rl;
-        robot.motor_front_right.ccrTL = v_fr;
-        robot.motor_rear_right.ccrTL = v_rr;
+        if (robot.motor_front_right.ccrTL != 0)
+        {
+            robot.motor_front_right.dir = (robot.motor_front_right.ccrTL >= 0) ? static_cast<uint8_t>(MotorDir::Forward) : static_cast<uint8_t>(MotorDir::Backward);
+        }
+        if (robot.motor_rear_left.ccrTL != 0)
+        {
+            robot.motor_rear_left.dir = (robot.motor_rear_left.ccrTL >= 0) ? static_cast<uint8_t>(MotorDir::Forward) : static_cast<uint8_t>(MotorDir::Backward);
+        }
+        if (robot.motor_rear_right.ccrTL != 0)
+        {
+            robot.motor_rear_right.dir = (robot.motor_rear_right.ccrTL >= 0) ? static_cast<uint8_t>(MotorDir::Forward) : static_cast<uint8_t>(MotorDir::Backward);
+        }
 
         return true;
     }

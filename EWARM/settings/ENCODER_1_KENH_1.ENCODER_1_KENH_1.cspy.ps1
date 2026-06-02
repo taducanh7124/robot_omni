@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "G:\IAR\common\bin\cspybat" -f "G:\stm32_robot_nguoi\robot_omni-main\robot_omni-main\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.general.xcl" --backend -f "G:\stm32_robot_nguoi\robot_omni-main\robot_omni-main\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.driver.xcl" 
+& "G:\IAR\common\bin\cspybat" -f "G:\internship\DO_AN\robot_omni\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.general.xcl" --backend -f "G:\internship\DO_AN\robot_omni\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.driver.xcl" 
 }
 else
 {
-& "G:\IAR\common\bin\cspybat" -f "G:\stm32_robot_nguoi\robot_omni-main\robot_omni-main\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.general.xcl" --debug_file=$debugfile --backend -f "G:\stm32_robot_nguoi\robot_omni-main\robot_omni-main\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.driver.xcl" 
+& "G:\IAR\common\bin\cspybat" -f "G:\internship\DO_AN\robot_omni\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.general.xcl" --debug_file=$debugfile --backend -f "G:\internship\DO_AN\robot_omni\EWARM\settings\ENCODER_1_KENH_1.ENCODER_1_KENH_1.driver.xcl" 
 }

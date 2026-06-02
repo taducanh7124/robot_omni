@@ -1,7 +1,6 @@
 #include "MotorControl.hpp"
 #include <math.h>
 #include "const.hpp"
-#include "pid_controller.hpp"
 
 // Khoi tao dong co robot
 MotorControl MotorCtr_FL;
@@ -158,8 +157,8 @@ void controlOnDinhCCR()
     // MotorCtr_RR.control((uint16_t)fabsf(robot.motor_rear_right.ccrHT), static_cast<MotorDir>(robot.motor_rear_right.dir));
 
     // Dieu khien dong co du tren du lieu dau vao
-    target_w_fl = robot.motor_front_left.ccrHT;
-    target_w_fr = robot.motor_front_left.ccrHT;
-    target_w_rl = robot.motor_front_left.ccrHT;
-    target_w_rr = robot.motor_front_left.ccrHT;
+    // target_w_fl = robot.motor_front_left.ccrHT;
+    // target_w_fr = robot.motor_front_right.ccrHT;
+    // target_w_rl = robot.motor_rear_left.ccrHT;
+    // target_w_rr = robot.motor_rear_right.ccrHT;
 }
