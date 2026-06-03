@@ -22,6 +22,7 @@ extern uint32_t tgTinhOdomCu;
 
 // Hàm tính toán odometry
 void khoiTaoMPU(void);
+void tinhVanToc(float delta_t);
 void tinhThongSoGoc(void);
 void tinhOdom(void);
 

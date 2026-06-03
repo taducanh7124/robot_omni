@@ -26,8 +26,28 @@ void khoiTaoSerial()
 {
     UART_DMA_6.init(&huart6, rxBuffer, sizeof(rxBuffer));
 }
+void khoiTaoPID() {
+    // Khởi tạo cho bánh trước trái
+    robot.motor_front_left.pid.kp = 0.0f; 
+    robot.motor_front_left.pid.ki = 0.0f; 
+    robot.motor_front_left.pid.saiSoCongDon = 0.0f;
+    robot.motor_front_left.pid.saiSoCu = 0.0f;
+    
+    robot.motor_front_right.pid.kp = 0.0f; 
+    robot.motor_front_right.pid.ki = 0.0f; 
+    robot.motor_front_right.pid.saiSoCongDon = 0.0f;
+    robot.motor_front_right.pid.saiSoCu = 0.0f;
 
-float freq = 0.0f;
+    robot.motor_rear_left.pid.kp = 0.0f; 
+    robot.motor_rear_left.pid.ki = 0.0f; 
+    robot.motor_rear_left.pid.saiSoCongDon = 0.0f;
+    robot.motor_rear_left.pid.saiSoCu = 0.0f;
+
+    robot.motor_rear_right.pid.kp = 0.0f; 
+    robot.motor_rear_right.pid.ki = 0.0f; 
+    robot.motor_rear_right.pid.saiSoCongDon = 0.0f;
+    robot.motor_rear_right.pid.saiSoCu = 0.0f;
+}
 
 void main_cpp()
 {
@@ -35,22 +55,19 @@ void main_cpp()
     khoiTaoEncoder();
     khoiTaoMotor();
     khoiTaoSerial();
+    khoiTaoPID();
 
     uint32_t tgNhayLedCu = 0;
-    uint32_t tgDieuKhienMotorCu = 0;
-    float count = 0.0f;
-    
+    uint32_t tgDieuKhienMotorCu = HAL_GetTick();
+    const float DELTA_T = 0.05f;
 
     while (1)
     {
-        count++;
         // Nháy LED báo trạng thái
         if (HAL_GetTick() - tgNhayLedCu >= 1000)
         {
             tgNhayLedCu = HAL_GetTick();
             nhayLed();
-            freq = count;
-            count = 0.0f;
         }
 
         // ĐỌC IMU NGAY KHI CÓ NGẮT, đảm bảo FIFO không bao giờ bị tràn và gây lỗi
@@ -60,15 +77,17 @@ void main_cpp()
             tinhThongSoGoc();     // Cập nhật ngay lập tức góc Yaw và Vận tốc góc yaw
         }
 
-        // Nhan du lieu dieu khien dao vao
+        // Nhan du lieu dieu khien dau vao
         debug_nhanDuLieu();
 
         // Dieu khien dong co du tren du lieu dau vao
         if (HAL_GetTick() - tgDieuKhienMotorCu >= 10)
         {
             tgDieuKhienMotorCu = HAL_GetTick();
-            controlOnDinhCCR();
+            tinhVanToc(DELTA_T);
+            dieuKhienMotorPID(DELTA_T);
         }
+
 
         // TÍNH TOÁN ODOMETRY
         tinhOdom();

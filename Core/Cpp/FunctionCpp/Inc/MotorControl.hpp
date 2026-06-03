@@ -31,13 +31,24 @@ public:
     void stop();
 };
 
+// Bo dieu khien pid
+typedef struct {
+    float kp; // He so ti le k
+    float ki; // He so tich phan i
+    float kd; // He so dao ham d
+    float saiSoCongDon; // Sai so cong don (tich phan)
+    float saiSoCu; // Sai so cu (dao ham)
+} PID_t;
+
 // Du lieu dieu khien robot
 typedef struct
 {
     uint8_t dir;
-    float ccrHT;  // CCR hiện tại
-    float ccrTL;  // CCR tương lai mong muốn đạt được
-    float vanToc; // Van toc
+    float ccrHT;      // CCR hiện tại
+    float ccrTL;      // CCR tương lai mong muốn đạt được
+    float vanToc;     // Van toc hien tai
+    float vanTocDich; // Van toc dich mong muon dat duoc
+    PID_t pid;        // Bo dieu khien PID tuong ung
 } DataControl_t;
 
 // Trang thai cua robot
@@ -67,9 +78,8 @@ extern MotorControl MotorCtr_RR;
 extern RobotDrive_t robot;
 
 // Khai bao ham dieu khien
-void controlOnDinh(void);
-void dungMotor(void);
 void dieuKhienMotor(void);
 void controlOnDinhCCR(void);
-
+void tinhPID(DataControl_t *motor, float delta_t);
+void dieuKhienMotorPID(float delta_t);
 #endif
