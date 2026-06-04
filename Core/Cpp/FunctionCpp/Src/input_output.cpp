@@ -27,6 +27,8 @@ float ccr_fr = 0.0f;
 float ccr_rl = 0.0f;
 float ccr_rr = 0.0f;
 int count = 0;
+bool isCheckVel = false;
+uint32_t tgCheckVelCu = 0;
 
 void debug_nhanDuLieu()
 {
@@ -44,12 +46,12 @@ void debug_nhanDuLieu()
     // Hạ cờ
     // robot.state.isDataNew = false;
 
-    // if (hrxdata.isReadData == true) // Neu du lieu da duoc xu li thì thoat
-    //     return;
+    if (hrxdata.isReadData == true) // Neu du lieu da duoc xu li thì thoat
+        return;
 
     // Tách dữ liệu từ uart bằng sscanf
-    // if (sscanf((char *)hrxdata.rxData, "%f,%f,%f", &v_robot, &w_robot, &theta_robot) == 3)
-    // {
+    if (sscanf((char *)hrxdata.rxData, "%f,%f,%f", &v_robot, &w_robot, &theta_robot) == 3)
+    {
         tgNhanDuLieuCu = HAL_GetTick(); // Cập nhật thời điểm nhận dữ liệu
 
         // Giới hạn tốc độ tối đa
@@ -77,7 +79,7 @@ void debug_nhanDuLieu()
         robot.motor_rear_left.vanTocDich = v_rl;
         robot.motor_front_right.vanTocDich = v_fr;
         robot.motor_rear_right.vanTocDich = v_rr;
-    // }
+    }
     hrxdata.isReadData = true; // Phất cờ báo có dữ liệu mới đã đọc xong, ke ca co loi khong doc duoc
 }
 
@@ -115,3 +117,34 @@ void debug_guiDuLieu()
         HAL_UART_Transmit_DMA(&huart6, txBuffer, doDaiGoiTin);
     }
 }
+
+// Chương trình kiểm tra vận tốc
+    // // Nếu bạn vừa bật cờ test bằng tay trong Debugger
+    // if (isCheckVel == true) 
+    // {
+    //     // 1. Chốt mốc thời gian ngay khoảnh khắc đầu tiên
+    //     if (tgCheckVelCu == 0) {
+    //         tgCheckVelCu = HAL_GetTick(); 
+    //     }
+
+    //     // 2. Kiểm tra xem đã chạy hết 3000ms (3 giây) chưa?
+    //     if (HAL_GetTick() - tgCheckVelCu <= 7000) 
+    //     {
+    //         v_robot = 0.1f; // Bơm vận tốc 0.1 m/s
+    //     } 
+    //     else 
+    //     {
+    //         // 3. Hết 3 giây: Dừng xe và tự động khóa cờ lại
+    //         v_robot = 0.0f;
+    //         isCheckVel = false; // Tự tắt cờ để không chạy nữa
+    //         tgCheckVelCu = 0;   // Reset mốc thời gian cho lần test sau
+    //     }
+    // } 
+    // else 
+    // {
+    //     // Nếu cờ đang tắt, đảm bảo mốc thời gian luôn bằng 0 chờ lệnh
+    //     tgCheckVelCu = 0;
+        
+    //     // Lưu ý: Không gán v_robot = 0.0f ở đây.
+    //     // Vì nếu bạn gán 0 ở đây, nó sẽ đè lên lệnh điều khiển thật từ ESP32/Tay cầm.
+    // }

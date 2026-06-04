@@ -9,7 +9,7 @@
 
 #define DUONGKINHBANH 0.06             // MET Duong kinh banh xe
 #define CHUVIBANH (DUONGKINHBANH * PI) // MET Chu vi banh xe
-#define XUNG1VONG 40                   // XUNG So xung 1 vong quay theo ly thuyet
+#define XUNG1VONG 40                   // XUNG So xung 1 vong quay theo ly thuyet 20 xung và đêm 2 suon
 
 #define lx 0.0855f    // MÉT một nửa chiều rộng đế robot, tâm 2 bánh khác phía (gồm độ dày bánh xe)
 #define ly 0.0575f    // MÉT một nửa chiều dài đế robot, tâm 2 bánh cùng phía

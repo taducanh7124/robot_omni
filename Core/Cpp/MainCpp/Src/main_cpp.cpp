@@ -28,23 +28,23 @@ void khoiTaoSerial()
 }
 void khoiTaoPID() {
     // Khởi tạo cho bánh trước trái
-    robot.motor_front_left.pid.kp = 0.0f; 
-    robot.motor_front_left.pid.ki = 0.0f; 
+    robot.motor_front_left.pid.kp = 40.0f; 
+    robot.motor_front_left.pid.ki = 80.0f; 
     robot.motor_front_left.pid.saiSoCongDon = 0.0f;
     robot.motor_front_left.pid.saiSoCu = 0.0f;
     
-    robot.motor_front_right.pid.kp = 0.0f; 
-    robot.motor_front_right.pid.ki = 0.0f; 
+    robot.motor_front_right.pid.kp = 40.0f; 
+    robot.motor_front_right.pid.ki = 80.0f; 
     robot.motor_front_right.pid.saiSoCongDon = 0.0f;
     robot.motor_front_right.pid.saiSoCu = 0.0f;
 
-    robot.motor_rear_left.pid.kp = 0.0f; 
-    robot.motor_rear_left.pid.ki = 0.0f; 
+    robot.motor_rear_left.pid.kp = 40.0f; 
+    robot.motor_rear_left.pid.ki = 80.0f; 
     robot.motor_rear_left.pid.saiSoCongDon = 0.0f;
     robot.motor_rear_left.pid.saiSoCu = 0.0f;
 
-    robot.motor_rear_right.pid.kp = 0.0f; 
-    robot.motor_rear_right.pid.ki = 0.0f; 
+    robot.motor_rear_right.pid.kp = 40.0f; 
+    robot.motor_rear_right.pid.ki = 80.0f; 
     robot.motor_rear_right.pid.saiSoCongDon = 0.0f;
     robot.motor_rear_right.pid.saiSoCu = 0.0f;
 }

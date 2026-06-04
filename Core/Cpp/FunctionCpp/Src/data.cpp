@@ -57,6 +57,31 @@ void khoiTaoMPU()
     }
 }
 
+// Bộ lọc trung bình
+const uint8_t soMau = 10;
+struct boLocTrungBinh
+{
+    float giaTri[soMau] = {0}; // Mang luu gia tri van toc gan nhat
+    uint8_t i = 0;
+    float tong = 0; // Tong cac gia tri trong mang
+
+    // Hàm cập nhật giá trị mới và trả về kết quả đã lọc
+    float tinhTrungBinh(float giaTriMoi)
+    {
+        tong -= giaTri[i];     // Trừ đi giá trị cũ nhất
+        giaTri[i] = giaTriMoi; // Lưu giá trị mới vào mảng
+        tong += giaTriMoi;     // Cộng giá trị mới vào tổng
+
+        i++;
+        if (i >= soMau)
+            i = 0;
+
+        return tong / soMau; // Trả về số trung bình
+    }
+};
+// Khai bao bo loc
+static boLocTrungBinh boLoc_FL, boLoc_FR, boLoc_RL, boLoc_RR;
+
 // Tính vận tốc tịnh tiến vx và vận tốc ngang vy
 void tinhVanToc(float delta_t)
 {
@@ -99,6 +124,12 @@ void tinhVanToc(float delta_t)
     else if (delta_RR < -32768)
         delta_RR += 65536;
 
+    // Dam bao gia tri luon duong
+    delta_FL = abs(delta_FL);
+    delta_FR = abs(delta_FR);
+    delta_RL = abs(delta_RL);
+    delta_RR = abs(delta_RR);
+
     // Xác định dấu encoder do có 1 kênh, dùng dấu từ đièu khiển hướng động cơ
     if (robot.motor_front_left.dir == 0)
         delta_FL = -delta_FL;
@@ -109,17 +140,15 @@ void tinhVanToc(float delta_t)
     if (robot.motor_rear_right.dir == 0)
         delta_RR = -delta_RR;
 
-    // Tính vận tốc của từng bánh
-    robot.motor_front_left.vanToc = (delta_FL * MET1XUNG) / delta_t;
-    robot.motor_rear_left.vanToc = (delta_RL * MET1XUNG) / delta_t;
-    robot.motor_front_right.vanToc = (delta_FR * MET1XUNG) / delta_t;
-    robot.motor_rear_right.vanToc = (delta_RR * MET1XUNG) / delta_t;
+    float v_fl = boLoc_FL.tinhTrungBinh( (delta_FL * MET1XUNG) / delta_t );
+    float v_fr = boLoc_FR.tinhTrungBinh( (delta_FR * MET1XUNG) / delta_t );
+    float v_rl = boLoc_RL.tinhTrungBinh( (delta_RL * MET1XUNG) / delta_t );
+    float v_rr = boLoc_RR.tinhTrungBinh( (delta_RR * MET1XUNG) / delta_t );
 
-    // Đưa vào biến cục bộ cho công thức dễ nhìn
-    float v_fl = robot.motor_front_left.vanToc;
-    float v_rl = robot.motor_rear_left.vanToc;
-    float v_fr = robot.motor_front_right.vanToc;
-    float v_rr = robot.motor_rear_right.vanToc;
+    robot.motor_front_left.vanToc = v_fl;
+    robot.motor_front_right.vanToc = v_fr;
+    robot.motor_rear_left.vanToc = v_rl;
+    robot.motor_rear_right.vanToc = v_rr;
 
     // Tính vận tốc bằng mô hình động học thuận
     odom_vx = (v_fl + v_fr + v_rl + v_rr) / 4.0f;

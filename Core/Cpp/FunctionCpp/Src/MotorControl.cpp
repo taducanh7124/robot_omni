@@ -165,9 +165,9 @@ void tinhPID(DataControl_t *motor, float delta_t) {
 
     const float heSoVanToc_CCR = 0.0113f; // He so chuyen doi van toc sang ccr
     const float ccrToiThieu = 15.0f;
-    const float ccrToiDa = 70.0f;
+    const float ccrToiDa = 250.0f;
 
-    // Tin 85% vao gia tri ccr dich de tranh tinh trang votlo
+    // Tin 85% vao gia tri ccr dich de tranh tinh trang vot lo
     float ccrDich = ((fabsf(motor->vanTocDich) / heSoVanToc_CCR) + ccrToiThieu) * 0.85f;
 
     // Tinh sai so hien tai
@@ -175,7 +175,7 @@ void tinhPID(DataControl_t *motor, float delta_t) {
     // Tinh sai so cong don
     motor->pid.saiSoCongDon += saiSoHienTai * delta_t;
     
-    float i_max = 15.0f; // Chỉ cho phép khâu I bù tối đa 15 CCR
+    float i_max = 100.0f; // Chỉ cho phép khâu I bù tối đa 100 CCR
     if (motor->pid.ki > 0.0001f) { 
         // Nếu giới hạn bị vượt quá, ép nó nằm trong khoảng cho phép
         if (motor->pid.ki * motor->pid.saiSoCongDon > i_max) 
